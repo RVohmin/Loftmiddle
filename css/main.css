@@ -416,6 +416,14 @@ textarea {
 .hero {
   background: url("../../img/main-bg.jpg") center center/cover no-repeat;
   position: relative; }
+  .hero:after {
+    content: '';
+    background-image: url("../../img/texture.png");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
 
 .hero__container {
   height: 100%; }
@@ -427,18 +435,17 @@ textarea {
   margin-left: 20px; }
 
 .hero__desc {
-  margin-top: 95px;
+  margin-top: 60px;
   margin-left: 8px; }
 
 .hero__desc-title {
-  margin-bottom: 25px;
   line-height: 1; }
 
 .hero__subtitle {
   font-size: 65px;
   color: #fff;
   font-family: 'Lifehack', Helvetica, sans-serif;
-  line-height: 1; }
+  line-height: .9; }
 
 .header {
   display: flex;
@@ -484,7 +491,7 @@ textarea {
   font-size: 72px;
   font-family: 'Gagalin-Regular', Helvetica, sans-serif;
   color: #f9b43b;
-  margin-bottom: 55px;
+  margin-bottom: 25px;
   line-height: 1; }
   .title--color--black {
     color: #2f3234; }
@@ -516,27 +523,28 @@ textarea {
   background: url("/img/second-bg.jpg") center center/cover no-repeat; }
 
 .best__container {
-  margin-top: -30px; }
+  margin-top: -25px; }
 
 .best__list {
   display: flex;
-  justify-content: center; }
+  justify-content: space-between; }
 
 .best__item {
   flex: 1;
   margin-right: 35px;
   text-align: center;
-  width: 285px; }
+  width: 275px; }
   .best__item:last-child {
     margin-right: 0; }
 
 .best__picture {
-  margin-bottom: 20px; }
+  height: 90px;
+  margin-bottom: 30px; }
 
 .best__title {
   font-size: 24px;
   font-family: 'Lifehack', Helvetica, sans-serif;
-  margin-bottom: 10px; }
+  margin-bottom: 15px; }
 
 .best__desc-text {
   opacity: 0.8;
@@ -645,6 +653,7 @@ textarea {
   border-color: #fff; }
 
 .fixed-menu__dot {
+  display: block;
   width: 16px;
   height: 16px;
   border-radius: 50%;

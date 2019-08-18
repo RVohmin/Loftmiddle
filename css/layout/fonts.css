@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("./../fonts/Ubuntu/Ubuntu-Light.ttf") format("ttf");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("./../fonts/Ubuntu/Ubuntu-Medium.ttf") format("ttf");
+  font-weight: medium;
+  font-style: normal; }
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("./../fonts/Ubuntu/Ubuntu-Regular.ttf") format("ttf");
+  font-weight: regular;
+  font-style: normal; }
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("./../fonts/Ubuntu/Ubuntu-Regular.ttf") format("ttf");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Gagalin-Regular';
+  src: url("../css/fonts/Gagalin/Gagalin-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Lifehack';
+  src: url("/css/fonts/Lifehack-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+/*# sourceMappingURL=fonts.css.map */

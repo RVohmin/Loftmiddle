@@ -1,0 +1,35 @@
+//colors
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;
+$z-fixed-menu: 100;
+//normalize
+@import "layout/normalize.scss";
+
+//setups
+@import 'layout/base';
+@import "layout/fonts";
+
+@import "blocks/section";
+@import "blocks/hero";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/title";
+@import "blocks/btn";
+@import "blocks/scroll-down-btn";
+@import "blocks/best";
+@import "blocks/reviews";
+@import "blocks/order";
+@import "blocks/form";
+@import "blocks/fixed-menu";
+
+
+
+
+
+
+
+
+
+

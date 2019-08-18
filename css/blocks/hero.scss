@@ -1,0 +1,30 @@
+.hero {
+  background: url("../../img/main-bg.jpg") center center / cover no-repeat;
+  position: relative;
+}
+.hero__container {
+  height: 100%;
+}
+.hero__content {
+  display: flex;
+  align-items: center;
+  flex: .7;
+  margin-left: 20px;
+}
+.hero__content-picture {
+
+}
+.hero__desc {
+  margin-top: 95px;
+  margin-left: 8px;
+}
+.hero__desc-title {
+  margin-bottom: 25px;
+  line-height: 1;
+}
+.hero__subtitle {
+  font-size: 65px;
+  color: #fff;
+  @include Lifehack;
+  line-height: 1;
+}

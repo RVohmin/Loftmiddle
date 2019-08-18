@@ -1,0 +1,45 @@
+.best {
+  background: url('/img/second-bg.jpg') center center / cover no-repeat;
+}
+.best__container {
+  margin-top: -30px;
+}
+.best__list {
+  display: flex;
+  justify-content: center;
+}
+.best__item {
+  flex: 1;
+  margin-right: 35px;
+  text-align: center;
+  width: 285px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.best__picture {
+  margin-bottom: 20px;
+
+}
+.best__title {
+  font-size: 24px;
+  @include Lifehack;
+  margin-bottom: 10px;
+}
+.best__desc-text {
+  opacity: 0.8;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: rgba(47, 50, 52, 0.8);
+
+}
+.title__best {
+  // padding-top: 15px;
+  margin-bottom: 55px;
+}

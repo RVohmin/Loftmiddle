@@ -563,9 +563,27 @@ textarea {
   height: 50%;
   background: center center / cover no-repeat;
   position: relative;
-  filter: grayscale(1); }
-  .reviews__item:hover .reviews__hover {
-    opacity: 1; }
+  filter: grayscale(0); }
+  .reviews__item:hover {
+    filter: grayscale(1); }
+    .reviews__item:hover .reviews__hover {
+      background: rgba(68, 70, 70, 0.6);
+      opacity: 1; }
+
+.reviews__title {
+  font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 30px; }
+
+.reviews__text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.71;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 17px; }
 
 .reviews__hover {
   color: #fff;
@@ -574,7 +592,6 @@ textarea {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(68, 70, 70, 0.6);
   padding: 50px 19px 19px;
   opacity: 0;
   transition: opacity .3s; }

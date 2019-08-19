@@ -401,7 +401,7 @@ textarea {
   font-style: normal; }
 @font-face {
   font-family: 'Lifehack';
-  src: url("/css/fonts/Lifehack-Medium.woff") format("woff");
+  src: url("../css/fonts/Lifehack-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
 .section {
@@ -416,14 +416,6 @@ textarea {
 .hero {
   background: url("../../img/main-bg.jpg") center center/cover no-repeat;
   position: relative; }
-  .hero:after {
-    content: '';
-    background-image: url("../../img/texture.png");
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0; }
 
 .hero__container {
   height: 100%; }

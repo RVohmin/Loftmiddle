@@ -25,7 +25,7 @@
   font-style: normal; }
 @font-face {
   font-family: 'Lifehack';
-  src: url("/css/fonts/Lifehack-Medium.woff") format("woff");
+  src: url("../css/fonts/Lifehack-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
 

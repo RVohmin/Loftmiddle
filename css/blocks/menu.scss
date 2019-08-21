@@ -1,0 +1,62 @@
+.menu {
+  position: relative;
+  background: url(../../img/five/five-bg.jpg) center center / cover no-repeat;
+}
+.title--menu {
+  padding-top: 110px;
+}
+
+.accorderdeon-menu {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0; }
+
+.accorderdeon-menu__list {
+  display: flex;
+}
+
+.accorderdeon-menu__elem {
+  display: flex;
+  background: #000;
+  filter: opacity(.8);
+}
+
+  // .accorderdeon-menu__elem:hover .accorderdeon-menu__content, .accorderdeon-menu__elem--active .accorderdeon-menu__content {
+  //   max-width: 500px;
+  // }
+
+.accorderdeon-menu__btn {
+  position: relative;
+  width: 80px;
+  flex: 0 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.accorderdeon-menu__title {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  color: #fff;
+  font-size: 40px;
+  font-family: 'Gagalin-Regular';
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: 0 0;
+  white-space: nowrap;
+  margin-top: -20px;
+}
+
+.accorderdeon-menu__content {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  overflow: hidden;
+  max-width: 0;
+  transition: 1.3s;
+}
+
+.accorderdeon-menu__text {
+  padding: 20px;
+  width: 500px; }

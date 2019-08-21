@@ -10,7 +10,6 @@ $z-fixed-menu: 100;
 //setups
 @import 'layout/base';
 @import "layout/fonts";
-
 @import "blocks/section";
 @import "blocks/hero";
 @import "blocks/header";
@@ -24,6 +23,17 @@ $z-fixed-menu: 100;
 @import "blocks/form";
 @import "blocks/fixed-menu";
 @import "blocks/team";
+@import "blocks/dark-burger";
+@import "blocks/menu";
+@import "blocks/work";
+@import "blocks/contacts";
+@import "blocks/footer";
+
+
+
+
+
+
 
 
 

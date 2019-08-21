@@ -1,20 +1,23 @@
 /*
 Error: Undefined mixin 'Lifehack'.
-        on line 35 of /Users/romanvokhmin/LOFT/2. /Site2/css/blocks/hero.scss, in `Lifehack'
-        from line 35 of /Users/romanvokhmin/LOFT/2. /Site2/css/blocks/hero.scss
+        on line 32 of /Users/romanvokhmin/LOFT/2. /Site2/css/blocks/best.scss, in `Lifehack'
+        from line 32 of /Users/romanvokhmin/LOFT/2. /Site2/css/blocks/best.scss
 
-30:   line-height: 1;
-31: }
-32: .hero__subtitle {
-33:   font-size: 65px;
-34:   color: #fff;
-35:   @include Lifehack;
-36:   line-height: .9;
-37: }
+27:   margin-bottom: 30px;
+28: }
+29: 
+30: .best__title {
+31:   font-size: 24px;
+32:   @include Lifehack;
+33:   margin-bottom: 15px;
+34: }
+35: 
+36: .best__desc-text {
+37:   opacity: 0.8;
 
 Backtrace:
-/Users/romanvokhmin/LOFT/2. /Site2/css/blocks/hero.scss:35:in `Lifehack'
-/Users/romanvokhmin/LOFT/2. /Site2/css/blocks/hero.scss:35
+/Users/romanvokhmin/LOFT/2. /Site2/css/blocks/best.scss:32:in `Lifehack'
+/Users/romanvokhmin/LOFT/2. /Site2/css/blocks/best.scss:32
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -63,4 +66,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'Lifehack'.\A         on line 35 of /Users/romanvokhmin/LOFT/2. /Site2/css/blocks/hero.scss, in `Lifehack'\A         from line 35 of /Users/romanvokhmin/LOFT/2. /Site2/css/blocks/hero.scss\A \A 30:   line-height: 1;\A 31: }\A 32: .hero__subtitle {\A 33:   font-size: 65px;\A 34:   color: #fff;\A 35:   @include Lifehack;\A 36:   line-height: .9;\A 37: }"; }
+  content: "Error: Undefined mixin 'Lifehack'.\A         on line 32 of /Users/romanvokhmin/LOFT/2. /Site2/css/blocks/best.scss, in `Lifehack'\A         from line 32 of /Users/romanvokhmin/LOFT/2. /Site2/css/blocks/best.scss\A \A 27:   margin-bottom: 30px;\A 28: }\A 29: \A 30: .best__title {\A 31:   font-size: 24px;\A 32:   @include Lifehack;\A 33:   margin-bottom: 15px;\A 34: }\A 35: \A 36: .best__desc-text {\A 37:   opacity: 0.8;"; }

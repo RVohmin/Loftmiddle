@@ -1,27 +1,32 @@
 .best {
   background: url('/img/second-bg.jpg') center center / cover no-repeat;
 }
+
 .best__container {
   margin-top: -25px;
 }
+
 .best__list {
   display: flex;
   justify-content: space-between;
 }
+
 .best__item {
   flex: 1;
   margin-right: 35px;
   text-align: center;
   width: 275px;
+
   &:last-child {
     margin-right: 0;
   }
 }
+
 .best__picture {
   height: 90px;
   margin-bottom: 30px;
-
 }
+
 .best__title {
   font-size: 24px;
   @include Lifehack;
@@ -41,7 +46,18 @@
   color: rgba(47, 50, 52, 0.8);
 
 }
+
 .title__best {
   // padding-top: 15px;
   margin-bottom: 55px;
+}
+
+.hand {
+  fill: #f8b43a;
+}
+
+.natural {
+  fill: #8ac03e;
+   height: 90px;
+  margin-bottom: 30px;
 }

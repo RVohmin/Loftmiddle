@@ -1,25 +1,39 @@
 /*
-Error: Undefined mixin 'Lifehack'.
-        on line 35 of /Users/romanvokhmin/LOFT/2. /Site2/css/blocks/hero.scss, in `Lifehack'
-        from line 35 of /Users/romanvokhmin/LOFT/2. /Site2/css/blocks/hero.scss
+Error: Undefined variable: "$yellow".
+        on line 44 of /Users/romanvokhmin/LOFT/2. /Site2/css/blocks/form.scss
 
-30:   line-height: 1;
-31: }
-32: .hero__subtitle {
-33:   font-size: 65px;
-34:   color: #fff;
-35:   @include Lifehack;
-36:   line-height: .9;
-37: }
+39:   width: 100%;
+40:   border: 2px solid transparent;
+41:   margin-bottom: 19px;
+42: 
+43:   &:focus {
+44:     border: 2px solid $yellow;
+45:   }
+46: 
+47:   &--textarea {
+48:     height: 110px;
+49:     outline: none;
 
 Backtrace:
-/Users/romanvokhmin/LOFT/2. /Site2/css/blocks/hero.scss:35:in `Lifehack'
-/Users/romanvokhmin/LOFT/2. /Site2/css/blocks/hero.scss:35
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/romanvokhmin/LOFT/2. /Site2/css/blocks/form.scss:44
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `map'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `_perform'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -63,4 +77,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'Lifehack'.\A         on line 35 of /Users/romanvokhmin/LOFT/2. /Site2/css/blocks/hero.scss, in `Lifehack'\A         from line 35 of /Users/romanvokhmin/LOFT/2. /Site2/css/blocks/hero.scss\A \A 30:   line-height: 1;\A 31: }\A 32: .hero__subtitle {\A 33:   font-size: 65px;\A 34:   color: #fff;\A 35:   @include Lifehack;\A 36:   line-height: .9;\A 37: }"; }
+  content: "Error: Undefined variable: \"$yellow\".\A         on line 44 of /Users/romanvokhmin/LOFT/2. /Site2/css/blocks/form.scss\A \A 39:   width: 100%;\A 40:   border: 2px solid transparent;\A 41:   margin-bottom: 19px;\A 42: \A 43:   &:focus {\A 44:     border: 2px solid $yellow;\A 45:   }\A 46: \A 47:   &--textarea {\A 48:     height: 110px;\A 49:     outline: none;"; }

@@ -49,25 +49,11 @@
 }
 .team__list--active {
   .team__list-desc {
-    height: 100%;
+    height: auto;
   }
-
   .team__list-name {
     &:before {
-      display: none;
-    }
-    &:after {
-      display: block;
-      position: absolute;
-      top: 10px;
-      left: -25px;
-      margin-right: 20px;
-      content: '';
-      width: 0;
-      height: 0;
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-      border-bottom: 9px solid #f9b43b;
+      transform: rotate(180deg);
     }
   }
 

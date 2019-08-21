@@ -1,0 +1,18 @@
+.order {
+  background: url(../../img/eight/bg7-texture.png) center center/cover no-repeat;
+  color: #fff;
+  position: relative; }
+  .order:before {
+    content: '';
+    background-image: url("../../img/eight/bg7-texture-over.png");
+    filter: opacity(0.9);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+
+.order__container {
+  position: relative; }
+
+/*# sourceMappingURL=order.css.map */

@@ -1,6 +1,6 @@
 .hero {
   background: url("../../img/first-screen.jpg") center center / cover no-repeat;
-  position: relative;
+  // position: relative;
 
   &:before {
     content: '';
@@ -13,7 +13,7 @@
   }
 }
 .hero__container {
-  height: 100%;
+  height: 100vh;
   position: relative;
 }
 .hero__content {
@@ -21,9 +21,6 @@
   align-items: center;
   flex: .7;
   margin-left: 20px;
-}
-.hero__content-picture {
-
 }
 .hero__desc {
   margin-top: 60px;

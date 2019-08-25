@@ -1,21 +1,41 @@
 * {
   box-sizing: border-box;
 }
-html, body {
+
+html,
+body {
   height: 100%;
 }
+
+html {
+  font-size: 16px;
+
+  @include laptop {
+    font-size: rem(14px);
+  }
+
+  @include phones {
+    font-size: rem(12px);
+  }
+}
+
+
+
 .wrapper {
   overflow: hidden;
   /* Не забыть поравить ширину под макет */
-  min-width: 1100;
+  // min-width: 1100;
+  width: 100%;
   min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .wrapper__content {
   flex: 1;
 }
+
 body {
   /* !Шрифт под макет поправить! */
   font-family: "Ubuntu", sans-serif;
@@ -27,23 +47,34 @@ body {
   color: $black;
   // @include ubuntu();
 }
+
 /* ВНИМАНИЕ! В контейнере не забудь поправить ширину! */
 .container {
-  width: 940px;
+  max-width: 940px;
+  ;
   margin: 0 auto;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  // position: relative;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+
 }
+
 a {
   text-decoration: none;
 }
+
 ul {
   margin: 0;
   padding: 0;
 }
-ul > li {
+
+ul>li {
   list-style: none;
 }
+
 button {
   border: none;
   background: transparent;
@@ -51,18 +82,28 @@ button {
   outline: none;
   color: inherit;
 }
-h1, h2, h3, h4, h5, h6, p {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
   font-weight: normal;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-input, button {
+input,
+button {
   outline: none;
 }
+
 textarea {
   resize: none;
 }

@@ -1,8 +1,8 @@
 .title {
-  font-size: 72px;
+  font-size: rem(72px);
   @include gagalin;
   color: $yellow;
-  margin-bottom: 25px;
+  margin-bottom: rem(25px);
   line-height: 1;
 
   &--color {
@@ -14,7 +14,12 @@
       color: white;
     }
   }
+
   &--centered {
     text-align: center;
+  }
+
+  @include tablets {
+    font-size: rem(65px);
   }
 }

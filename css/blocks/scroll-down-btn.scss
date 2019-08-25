@@ -1,19 +1,23 @@
 .scroll-down-btn {
-  width: 29px;
-  height: 14px;
+  width: rem(29px);
+  height: rem(14px);
   // display: block;
   position: absolute;
-  bottom: 40px;
+  bottom: rem(40px);
   left: 50%;
   transform: translateX(-50%);
 }
 
 .arrow-scroll {
   fill: #fff;
-  width: 29px;
-  height: 14px;
+  width: rem(29px);
+  height: rem(14px);
   // display: block;
   position: absolute;
-  bottom: 40px;
+  bottom: rem(45px);
   left: 50%;
+  transform: translateX(-50%);
+  @include tablets {
+    bottom: rem(40px);
+  }
 }

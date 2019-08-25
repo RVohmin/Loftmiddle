@@ -1,16 +1,18 @@
 .contacts {
-  // position: relative;
   background: url('./../../img/footer/bg-footer.jpg') center center / cover no-repeat;
   display: flex;
 }
 
+.conacts-wrap {
+  position: relative;
+}
 .map {
   position: relative;
-  min-width: 100%;
-  min-height: 90%;
-  background: url('../../img/eight/map.jpg') center center / cover no-repeat;
+  top: 0;
 }
 
 .contacts__map {
-  height: 90%;
+  position: relative;
+  height: 90vh;
+  width: 100vw;
 }

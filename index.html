@@ -386,8 +386,8 @@
                     <div class="form__block-title">Квартира</div>
                     <input type="text" class="form__input">
                   </label>
-                  <label class="form__block">
-                    <div class="form__block-title">Этаж</div>
+                  <label class="form__block form__block--hiiden-on-mobile">
+                    <div class="form__block-title ">Этаж</div>
                     <input type="text" class="form__input">
                   </label>
                 </div>
@@ -414,8 +414,6 @@
                     </div>
                   </label>
                 </div>
-                <!-- <div class="form__row">
-                    <div class="form__col"> -->
                 <label class="checkbox">
                   <input type="checkbox" class="checkbox__input" />
                   <div class="checkbox__content">
@@ -425,10 +423,10 @@
                     <div class="checkbox__text">Не перезванивать</div>
                   </div>
                 </label>
-                <!-- </div>
-                  </div> -->
-                <a href="#" class="btn">Заказать</a>
-                <button type="reset" class="btn--reset">Очистить</button>
+                <div class="form-buttons">
+                  <button type="submit" class="btn">Заказать</button>
+                  <button type="reset" class="btn--reset">Очистить</button>
+                </div>
               </div>
 
             </form>
@@ -438,19 +436,22 @@
 
       <section class="section contacts">
         <div class="conacts-wrap">
-          <div class="map">
-            <img src="./img/eight/map.jpg" alt="Карта" class="contacts__map">
+          <div class="yandex-map" id="map">
+            <img class="yandex-map__img" src="/img/eight/map.jpg" alt="">
           </div>
           <footer class="footer">
             <div class="container">
               <div class="footer-wrap">
                 <div class="footer__left">
-                  <address class="address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</address>
-                  <svg class="address-phone">
-                    <use xlink:href="./img/sprite.svg#phone-icon"></use>
-                  </svg>
-                  <a href="tel:+78123771377" class="adress__link">
-                    +7 (812) 377-13-77</a>
+                  <address class="address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15
+                    <div class="address__phone">
+                      <svg class="address__phone-pic">
+                        <use xlink:href="./img/sprite.svg#phone-icon"></use>
+                      </svg>
+                      <a href="tel:+78123771377" class="adress__link">
+                        +7 (812) 377-13-77</a>
+                    </div>
+                    </address>
                 </div>
                 <div class="footer__right">
                   <div class="social">

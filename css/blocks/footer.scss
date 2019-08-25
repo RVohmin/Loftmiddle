@@ -1,20 +1,26 @@
 .footer {
-  // background: url('./../../img/footer/bg-footer.jpg') center center / cover no-repeat;
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // right: 0;
-  // bottom: 0;
+  background: url('./../../img/footer/bg-footer.jpg') center bottom no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: rem(10px) 0;
 }
 
-.footer-container {
-  position: absolute;
-  top: 0;
-}
- .footer-wrap {
+// .footer-container {
+//   position: absolute;
+//   top: 0;
+// }
+
+.footer-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .footer__left {
@@ -22,6 +28,12 @@
   font-size: rem(14px);
   color: #fff;
   font-style: normal;
+
+  @include phones {
+    justify-content: center;
+    width: initial;
+    padding: 0;
+  }
 }
 
 .address {
@@ -29,10 +41,38 @@
   color: #fff;
   font-style: normal;
   margin-bottom: rem(10px);
+
+  @include phones {
+    flex-direction: column;
+    padding: rem(18px) 0;
+    margin: 0;
+  }
+}
+
+.address__phone {
+  text-align: center;
+}
+
+.address__phone-pic {
+  fill: #e45028;
+  width: rem(12px);
+  height: rem(12px);
+}
+
+.social {
+  height: 100%;
+
+  @include phones {
+    padding-bottom: rem(20px);
+    height: 100%;
+
+  }
 }
 
 .social-list {
   display: flex;
+
+
 }
 
 .social__item {
@@ -77,10 +117,4 @@
   font-size: rem(14px);
   color: #e45028;
   padding-left: rem(5px);
-}
-
-.address-phone {
-  fill: #e45028;
-  width: rem(12px);
-  height: rem(12px);
 }

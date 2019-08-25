@@ -4,12 +4,18 @@
 
 .form__elem {
   display: flex;
+
   @include tablets {
     flex-direction: column;
     padding: 0 24%;
+
     .form__column {
       margin-right: 0;
     }
+  }
+
+  @include phones {
+    padding: 0;
   }
 }
 
@@ -27,10 +33,21 @@
 
 }
 
+// .form__block--hiiden-on-mobile {
+//   display: block;
+// }
 .form__block {
   flex: 1;
   margin-right: rem(20px);
   display: block;
+
+
+
+  &--hiiden-on-mobile {
+    @include phones {
+      display: none;
+    }
+  }
 
   &:last-child {
     margin-right: 0;
@@ -61,11 +78,14 @@
     outline: none;
     border: rem(2px) solid transparent;
     margin-bottom: rem(13px);
+
     &:focus {
       border: rem(2px) solid $yellow;
     }
   }
 }
+
+
 
 .form__block--textarea {
   margin-right: 0;
@@ -74,10 +94,18 @@
 .radio {
   margin-bottom: rem(20px);
 
+  @include phones {
+    margin-bottom: rem(38px);
+  }
 }
 
 .radio-group {
   display: flex;
+
+  @include phones {
+    justify-content: center;
+    padding-top: rem(35px);
+  }
 }
 
 .radio__input {
@@ -101,6 +129,7 @@
   -ms-flex-align: center;
   align-items: center;
   margin-right: rem(1px);
+
 }
 
 .radio__btn {
@@ -143,6 +172,11 @@
   margin: 0;
   margin-right: rem(10px);
   margin-bottom: rem(25px);
+
+  @include phones {
+    justify-content: center;
+    margin-bottom: rem(40px);
+  }
 }
 
 .checkbox__text {
@@ -186,6 +220,14 @@
 .checkbox__text {
   color: #fff;
 }
+
+.form-buttons {
+  @include phones {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .btn--reset {
   margin-left: rem(10px);
 }

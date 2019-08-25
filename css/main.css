@@ -926,6 +926,10 @@ textarea {
     /* line 1, blocks/title.scss */
     .title {
       font-size: 4.0625rem; } }
+  @media screen and (max-width: 480px) {
+    /* line 1, blocks/title.scss */
+    .title {
+      font-size: 3.125rem; } }
 
 /* line 1, blocks/btn.scss */
 .btn {
@@ -1346,43 +1350,51 @@ textarea {
           -ms-flex-direction: column;
               flex-direction: column;
       padding: 0 24%; }
-      /* line 10, blocks/form.scss */
+      /* line 12, blocks/form.scss */
       .form__elem .form__column {
         margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    /* line 5, blocks/form.scss */
+    .form__elem {
+      padding: 0; } }
 
-/* line 16, blocks/form.scss */
+/* line 22, blocks/form.scss */
 .form__column {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   margin-right: 1.25rem; }
-  /* line 20, blocks/form.scss */
+  /* line 26, blocks/form.scss */
   .form__column:last-child {
     margin-right: 0; }
 
-/* line 25, blocks/form.scss */
+/* line 31, blocks/form.scss */
 .form__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-/* line 30, blocks/form.scss */
+/* line 39, blocks/form.scss */
 .form__block {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   margin-right: 1.25rem;
   display: block; }
-  /* line 35, blocks/form.scss */
+  @media screen and (max-width: 480px) {
+    /* line 46, blocks/form.scss */
+    .form__block--hiiden-on-mobile {
+      display: none; } }
+  /* line 52, blocks/form.scss */
   .form__block:last-child {
     margin-right: 0; }
 
-/* line 40, blocks/form.scss */
+/* line 57, blocks/form.scss */
 .form__block-title {
   font-size: 0.875rem;
   margin-bottom: 0.3125rem; }
 
-/* line 46, blocks/form.scss */
+/* line 63, blocks/form.scss */
 .form__input {
   background: #fff;
   border-radius: 0.3125rem;
@@ -1391,47 +1403,58 @@ textarea {
   width: 100%;
   border: 0.125rem solid transparent;
   margin-bottom: 0.9375rem; }
-  /* line 55, blocks/form.scss */
+  /* line 72, blocks/form.scss */
   .form__input:focus {
     border: 0.125rem solid #f9b43b; }
-  /* line 59, blocks/form.scss */
+  /* line 76, blocks/form.scss */
   .form__input--textarea {
     height: 6.75rem;
     outline: none;
     border: 0.125rem solid transparent;
     margin-bottom: 0.8125rem; }
-    /* line 64, blocks/form.scss */
+    /* line 82, blocks/form.scss */
     .form__input--textarea:focus {
       border: 0.125rem solid #f9b43b; }
 
-/* line 70, blocks/form.scss */
+/* line 90, blocks/form.scss */
 .form__block--textarea {
   margin-right: 0; }
 
-/* line 74, blocks/form.scss */
+/* line 94, blocks/form.scss */
 .radio {
   margin-bottom: 1.25rem; }
+  @media screen and (max-width: 480px) {
+    /* line 94, blocks/form.scss */
+    .radio {
+      margin-bottom: 2.375rem; } }
 
-/* line 79, blocks/form.scss */
+/* line 102, blocks/form.scss */
 .radio-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media screen and (max-width: 480px) {
+    /* line 102, blocks/form.scss */
+    .radio-group {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding-top: 2.1875rem; } }
 
-/* line 83, blocks/form.scss */
+/* line 111, blocks/form.scss */
 .radio__input {
   position: absolute;
   opacity: 0; }
 
-/* line 88, blocks/form.scss */
+/* line 116, blocks/form.scss */
 .radio__input:checked + .radio__content .radio__btn:after {
   opacity: 1; }
 
-/* line 92, blocks/form.scss */
+/* line 120, blocks/form.scss */
 .radio__input:checked + .radio__content {
   color: #e35028; }
 
-/* line 96, blocks/form.scss */
+/* line 124, blocks/form.scss */
 .radio__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1441,7 +1464,7 @@ textarea {
   align-items: center;
   margin-right: 0.0625rem; }
 
-/* line 106, blocks/form.scss */
+/* line 135, blocks/form.scss */
 .radio__btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1458,7 +1481,7 @@ textarea {
   background-color: #fff;
   margin-right: 0.5625rem; }
 
-/* line 123, blocks/form.scss */
+/* line 152, blocks/form.scss */
 .radio__btn:after {
   content: '';
   display: block;
@@ -1470,14 +1493,14 @@ textarea {
   -webkit-transition: 0.3s;
   transition: 0.3s; }
 
-/* line 134, blocks/form.scss */
+/* line 163, blocks/form.scss */
 .radio__text {
   color: #fff;
   font-size: 0.875rem;
   letter-spacing: -.4px;
   margin-right: 1.25rem; }
 
-/* line 141, blocks/form.scss */
+/* line 170, blocks/form.scss */
 .checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1485,21 +1508,28 @@ textarea {
   margin: 0;
   margin-right: 0.625rem;
   margin-bottom: 1.5625rem; }
+  @media screen and (max-width: 480px) {
+    /* line 170, blocks/form.scss */
+    .checkbox {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-bottom: 2.5rem; } }
 
-/* line 148, blocks/form.scss */
+/* line 182, blocks/form.scss */
 .checkbox__text {
   font-size: 0.875rem; }
 
-/* line 152, blocks/form.scss */
+/* line 186, blocks/form.scss */
 .checkbox__input {
   opacity: 0;
   position: absolute; }
 
-/* line 157, blocks/form.scss */
+/* line 191, blocks/form.scss */
 .checkbox__input:checked + .checkbox__content .checkbox__btn img {
   opacity: 1; }
 
-/* line 161, blocks/form.scss */
+/* line 195, blocks/form.scss */
 .checkbox__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1508,7 +1538,7 @@ textarea {
       -ms-flex-align: center;
           align-items: center; }
 
-/* line 168, blocks/form.scss */
+/* line 202, blocks/form.scss */
 .checkbox__btn {
   position: relative;
   width: 0.9375rem;
@@ -1516,7 +1546,7 @@ textarea {
   background-color: #fff;
   margin-right: 0.625rem; }
 
-/* line 176, blocks/form.scss */
+/* line 210, blocks/form.scss */
 .checkbox__btn img {
   position: absolute;
   top: 50%;
@@ -1527,11 +1557,21 @@ textarea {
   height: 0.5625rem;
   opacity: 0; }
 
-/* line 186, blocks/form.scss */
+/* line 220, blocks/form.scss */
 .checkbox__text {
   color: #fff; }
 
-/* line 189, blocks/form.scss */
+@media screen and (max-width: 480px) {
+  /* line 224, blocks/form.scss */
+  .form-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+/* line 231, blocks/form.scss */
 .btn--reset {
   margin-left: 0.625rem; }
 
@@ -1827,32 +1867,28 @@ textarea {
 
 /* line 1, blocks/contacts.scss */
 .contacts {
-  background: url("./../../img/footer/bg-footer.jpg") center center/cover no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  position: relative; }
 
-/* line 6, blocks/contacts.scss */
+/* line 7, blocks/contacts.scss */
 .conacts-wrap {
   position: relative; }
 
-/* line 9, blocks/contacts.scss */
-.map {
-  position: relative;
-  top: 0; }
+/* line 20, blocks/contacts.scss */
+.yandex-map__img {
+  height: 100vh;
+  width: 100%; }
 
-/* line 14, blocks/contacts.scss */
-.contacts__map {
-  position: relative;
-  height: 90vh;
-  width: 100vw; }
-
-/* line 10, blocks/footer.scss */
-.footer-container {
+/* line 1, blocks/footer.scss */
+.footer {
+  background: url("./../../img/footer/bg-footer.jpg") center bottom no-repeat;
+  background-size: cover;
   position: absolute;
-  top: 0; }
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.625rem 0; }
 
-/* line 14, blocks/footer.scss */
+/* line 16, blocks/footer.scss */
 .footer-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1863,70 +1899,107 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media screen and (max-width: 480px) {
+    /* line 16, blocks/footer.scss */
+    .footer-wrap {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
-/* line 20, blocks/footer.scss */
+/* line 26, blocks/footer.scss */
 .footer__left {
   padding: 0.625rem 0;
   font-size: 0.875rem;
   color: #fff;
   font-style: normal; }
+  @media screen and (max-width: 480px) {
+    /* line 26, blocks/footer.scss */
+    .footer__left {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: initial;
+      padding: 0; } }
 
-/* line 27, blocks/footer.scss */
+/* line 39, blocks/footer.scss */
 .address {
   font-size: 0.875rem;
   color: #fff;
   font-style: normal;
   margin-bottom: 0.625rem; }
+  @media screen and (max-width: 480px) {
+    /* line 39, blocks/footer.scss */
+    .address {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: 1.125rem 0;
+      margin: 0; } }
 
-/* line 34, blocks/footer.scss */
+/* line 52, blocks/footer.scss */
+.address__phone {
+  text-align: center; }
+
+/* line 56, blocks/footer.scss */
+.address__phone-pic {
+  fill: #e45028;
+  width: 0.75rem;
+  height: 0.75rem; }
+
+/* line 62, blocks/footer.scss */
+.social {
+  height: 100%; }
+  @media screen and (max-width: 480px) {
+    /* line 62, blocks/footer.scss */
+    .social {
+      padding-bottom: 1.25rem;
+      height: 100%; } }
+
+/* line 72, blocks/footer.scss */
 .social-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-/* line 38, blocks/footer.scss */
+/* line 78, blocks/footer.scss */
 .social__item {
   margin-right: 1.25rem; }
-  /* line 41, blocks/footer.scss */
+  /* line 81, blocks/footer.scss */
   .social__item:last-child {
     margin-right: 0; }
 
-/* line 47, blocks/footer.scss */
+/* line 87, blocks/footer.scss */
 .social__links-svg:hover {
   fill: #fff; }
 
-/* line 52, blocks/footer.scss */
+/* line 92, blocks/footer.scss */
 .vk {
   fill: #585858;
   width: 1.4375rem;
   height: 0.8125rem; }
 
-/* line 58, blocks/footer.scss */
+/* line 98, blocks/footer.scss */
 .fb {
   fill: #585858;
   width: 1.25rem;
   height: 1.25rem; }
 
-/* line 64, blocks/footer.scss */
+/* line 104, blocks/footer.scss */
 .inst {
   fill: #585858;
   width: 1.25rem;
   height: 1.25rem; }
 
-/* line 70, blocks/footer.scss */
+/* line 110, blocks/footer.scss */
 .twitter {
   fill: #585858;
   width: 1.25rem;
   height: 1rem; }
 
-/* line 76, blocks/footer.scss */
+/* line 116, blocks/footer.scss */
 .adress__link {
   font-size: 0.875rem;
   color: #e45028;
   padding-left: 0.3125rem; }
-
-/* line 82, blocks/footer.scss */
-.address-phone {
-  fill: #e45028;
-  width: 0.75rem;
-  height: 0.75rem; }

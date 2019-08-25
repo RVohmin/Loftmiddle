@@ -1792,11 +1792,19 @@ textarea {
   position: relative;
   background: url(../../img/five/five-bg.jpg) center center/cover no-repeat; }
 
-/* line 5, blocks/menu.scss */
+/* line 6, blocks/menu.scss */
 .title--menu {
   padding-top: 6.875rem; }
+  @media screen and (max-width: 768px) {
+    /* line 6, blocks/menu.scss */
+    .title--menu {
+      font-size: 4.0625rem; } }
+  @media screen and (max-width: 480px) {
+    /* line 6, blocks/menu.scss */
+    .title--menu {
+      font-size: 3.125rem; } }
 
-/* line 9, blocks/menu.scss */
+/* line 18, blocks/menu.scss */
 .accorderdeon-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1806,13 +1814,13 @@ textarea {
   right: 0;
   bottom: 0; }
 
-/* line 16, blocks/menu.scss */
+/* line 26, blocks/menu.scss */
 .accorderdeon-menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-/* line 20, blocks/menu.scss */
+/* line 30, blocks/menu.scss */
 .accorderdeon-menu__elem {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1821,7 +1829,7 @@ textarea {
   -webkit-filter: opacity(0.8);
           filter: opacity(0.8); }
 
-/* line 30, blocks/menu.scss */
+/* line 40, blocks/menu.scss */
 .accorderdeon-menu__btn {
   position: relative;
   width: 5rem;
@@ -1832,7 +1840,7 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover; }
 
-/* line 39, blocks/menu.scss */
+/* line 49, blocks/menu.scss */
 .accorderdeon-menu__title {
   position: absolute;
   top: 100%;
@@ -1847,7 +1855,7 @@ textarea {
   white-space: nowrap;
   margin-top: -1.25rem; }
 
-/* line 52, blocks/menu.scss */
+/* line 62, blocks/menu.scss */
 .accorderdeon-menu__content {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
@@ -1856,7 +1864,7 @@ textarea {
   -webkit-transition: 1.3s;
   transition: 1.3s; }
 
-/* line 60, blocks/menu.scss */
+/* line 70, blocks/menu.scss */
 .accorderdeon-menu__text {
   padding: 1.25rem;
   width: 31.25rem; }

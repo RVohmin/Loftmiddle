@@ -2,8 +2,17 @@
   position: relative;
   background: url(../../img/five/five-bg.jpg) center center / cover no-repeat;
 }
+
 .title--menu {
   padding-top: rem(110px);
+
+  @include tablets {
+    font-size: rem(65px);
+  }
+
+  @include phones {
+    font-size: rem(50px);
+  }
 }
 
 .accorderdeon-menu {
@@ -11,7 +20,8 @@
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 0; }
+  bottom: 0;
+}
 
 .accorderdeon-menu__list {
   display: flex;
@@ -23,9 +33,9 @@
   filter: opacity(.8);
 }
 
-  // .accorderdeon-menu__elem:hover .accorderdeon-menu__content, .accorderdeon-menu__elem--active .accorderdeon-menu__content {
-  //   max-width: rem(500px);
-  // }
+// .accorderdeon-menu__elem:hover .accorderdeon-menu__content, .accorderdeon-menu__elem--active .accorderdeon-menu__content {
+//   max-width: rem(500px);
+// }
 
 .accorderdeon-menu__btn {
   position: relative;
@@ -59,4 +69,5 @@
 
 .accorderdeon-menu__text {
   padding: rem(20px);
-  width: rem(500px); }
+  width: rem(500px);
+}

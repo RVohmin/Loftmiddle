@@ -50,7 +50,11 @@
 }
 
 .address__phone {
-  text-align: center;
+  text-align: left;
+  @include phones {
+    text-align: center;
+
+  }
 }
 
 .address__phone-pic {

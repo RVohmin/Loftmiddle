@@ -1948,65 +1948,69 @@ textarea {
 
 /* line 52, blocks/footer.scss */
 .address__phone {
-  text-align: center; }
+  text-align: left; }
+  @media screen and (max-width: 480px) {
+    /* line 52, blocks/footer.scss */
+    .address__phone {
+      text-align: center; } }
 
-/* line 56, blocks/footer.scss */
+/* line 60, blocks/footer.scss */
 .address__phone-pic {
   fill: #e45028;
   width: 0.75rem;
   height: 0.75rem; }
 
-/* line 62, blocks/footer.scss */
+/* line 66, blocks/footer.scss */
 .social {
   height: 100%; }
   @media screen and (max-width: 480px) {
-    /* line 62, blocks/footer.scss */
+    /* line 66, blocks/footer.scss */
     .social {
       padding-bottom: 1.25rem;
       height: 100%; } }
 
-/* line 72, blocks/footer.scss */
+/* line 76, blocks/footer.scss */
 .social-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-/* line 78, blocks/footer.scss */
+/* line 82, blocks/footer.scss */
 .social__item {
   margin-right: 1.25rem; }
-  /* line 81, blocks/footer.scss */
+  /* line 85, blocks/footer.scss */
   .social__item:last-child {
     margin-right: 0; }
 
-/* line 87, blocks/footer.scss */
+/* line 91, blocks/footer.scss */
 .social__links-svg:hover {
   fill: #fff; }
 
-/* line 92, blocks/footer.scss */
+/* line 96, blocks/footer.scss */
 .vk {
   fill: #585858;
   width: 1.4375rem;
   height: 0.8125rem; }
 
-/* line 98, blocks/footer.scss */
+/* line 102, blocks/footer.scss */
 .fb {
   fill: #585858;
   width: 1.25rem;
   height: 1.25rem; }
 
-/* line 104, blocks/footer.scss */
+/* line 108, blocks/footer.scss */
 .inst {
   fill: #585858;
   width: 1.25rem;
   height: 1.25rem; }
 
-/* line 110, blocks/footer.scss */
+/* line 114, blocks/footer.scss */
 .twitter {
   fill: #585858;
   width: 1.25rem;
   height: 1rem; }
 
-/* line 116, blocks/footer.scss */
+/* line 120, blocks/footer.scss */
 .adress__link {
   font-size: 0.875rem;
   color: #e45028;

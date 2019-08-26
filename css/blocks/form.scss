@@ -41,7 +41,11 @@
   margin-right: rem(20px);
   display: block;
 
-
+  &--hidden-margin-mobile {
+    @include phones {
+      margin-right: 0;
+    }
+  }
 
   &--hiiden-on-mobile {
     @include phones {
@@ -147,6 +151,7 @@
   border-radius: 50%;
   background-color: #fff;
   margin-right: rem(9px);
+  flex: 0 0 auto;
 }
 
 .radio__btn:after {

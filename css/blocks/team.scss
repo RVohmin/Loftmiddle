@@ -13,8 +13,7 @@
   bottom: 0;
   right: 0;
   left: 50%;
-  background: rgba(#2f3234, .93);
-  opacity: .95;
+  background: rgba(#2f3234, .95);
   padding-left: rem(100px);
   padding-top: rem(110px);
 
@@ -55,6 +54,7 @@
 .team__list-desc {
   display: flex;
   height: 0;
+  transition: .7s;
   overflow: hidden;
 }
 
@@ -94,11 +94,10 @@
     margin-bottom: rem(12px);
     color: $yellow;
     cursor: pointer;
-
   }
 
   .team__list-desc {
-    height: auto;
+    height: 100px;
 
     @include tablets {
       display: flex;

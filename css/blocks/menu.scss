@@ -30,9 +30,8 @@
 .accorderdeon-menu__elem {
   display: flex;
   background: #000;
-  filter: opacity(.8);
+  background: rgba(#475052, .9);
 }
-
 
 // .accorderdeon-menu__elem:hover .accorderdeon-menu__content,
 .accorderdeon-menu__elem.active .accorderdeon-menu__content {
@@ -66,7 +65,7 @@
   color: #fff;
   overflow: hidden;
   max-width: 0;
-  transition: 1.3s;
+  transition: .7s;
 }
 
 .accorderdeon-menu__text {

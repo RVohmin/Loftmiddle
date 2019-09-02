@@ -1632,8 +1632,7 @@ textarea {
   bottom: 0;
   right: 0;
   left: 50%;
-  background: rgba(47, 50, 52, 0.93);
-  opacity: .95;
+  background: rgba(47, 50, 52, 0.95);
   padding-left: 6.25rem;
   padding-top: 6.875rem; }
   @media screen and (max-width: 768px) {
@@ -1666,25 +1665,27 @@ textarea {
               flex-direction: column; } }
 
 @media screen and (max-width: 768px) {
-  /* line 37, blocks/team.scss */
+  /* line 36, blocks/team.scss */
   .team__list {
     text-align: center; } }
 
-/* line 43, blocks/team.scss */
+/* line 42, blocks/team.scss */
 .team__list-item {
   margin-bottom: 0.9375rem;
   cursor: pointer; }
 
-/* line 49, blocks/team.scss */
+/* line 48, blocks/team.scss */
 .team__title {
   margin-bottom: 2.8125rem; }
 
-/* line 55, blocks/team.scss */
+/* line 54, blocks/team.scss */
 .team__list-desc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 0;
+  -webkit-transition: .7s;
+  transition: .7s;
   overflow: hidden; }
 
 /* line 61, blocks/team.scss */
@@ -1718,11 +1719,11 @@ textarea {
   margin-bottom: 0.75rem;
   color: #f9b43b;
   cursor: pointer; }
-/* line 100, blocks/team.scss */
+/* line 99, blocks/team.scss */
 .team__list--active .team__list-desc {
-  height: auto; }
+  height: 100px; }
   @media screen and (max-width: 768px) {
-    /* line 100, blocks/team.scss */
+    /* line 99, blocks/team.scss */
     .team__list--active .team__list-desc {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1734,33 +1735,33 @@ textarea {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-      /* line 108, blocks/team.scss */
+      /* line 107, blocks/team.scss */
       .team__list--active .team__list-desc .team__list-img {
         margin-right: 0;
         margin-bottom: 1.125rem; } }
-/* line 115, blocks/team.scss */
+/* line 114, blocks/team.scss */
 .team__list--active .team__list-name {
   cursor: pointer; }
-  /* line 118, blocks/team.scss */
+  /* line 117, blocks/team.scss */
   .team__list--active .team__list-name:before {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg); }
-/* line 124, blocks/team.scss */
+/* line 123, blocks/team.scss */
 .team__list--active .team__list-desc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 2.375rem; }
 
-/* line 131, blocks/team.scss */
+/* line 130, blocks/team.scss */
 .team__list-item {
   position: relative; }
 
-/* line 135, blocks/team.scss */
+/* line 134, blocks/team.scss */
 .team__list {
   margin-left: 1.25rem; }
 
-/* line 139, blocks/team.scss */
+/* line 138, blocks/team.scss */
 .team__list-img {
   display: block;
   width: 6.25rem;
@@ -1776,7 +1777,7 @@ textarea {
   -ms-flex-negative: 0;
       flex-shrink: 0; }
 
-/* line 151, blocks/team.scss */
+/* line 150, blocks/team.scss */
 .team__list-pic {
   width: 100%;
   display: block;
@@ -1787,18 +1788,18 @@ textarea {
   -ms-flex-negative: 0;
       flex-shrink: 0; }
 
-/* line 159, blocks/team.scss */
+/* line 158, blocks/team.scss */
 .team__list-text {
   color: #fff;
   font-size: 0.875rem;
   width: 13.75rem;
   line-height: 1.5rem; }
   @media screen and (max-width: 768px) {
-    /* line 159, blocks/team.scss */
+    /* line 158, blocks/team.scss */
     .team__list-text {
       width: 20.75rem; } }
 
-/* line 170, blocks/team.scss */
+/* line 169, blocks/team.scss */
 .team__list-position {
   margin-top: -0.1875rem;
   font-weight: bold;
@@ -2167,14 +2168,13 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   background: #000;
-  -webkit-filter: opacity(0.8);
-          filter: opacity(0.8); }
+  background: rgba(71, 80, 82, 0.9); }
 
-/* line 38, blocks/menu.scss */
+/* line 37, blocks/menu.scss */
 .accorderdeon-menu__elem.active .accorderdeon-menu__content {
   max-width: 500px; }
 
-/* line 42, blocks/menu.scss */
+/* line 41, blocks/menu.scss */
 .accorderdeon-menu__btn {
   position: relative;
   width: 5rem;
@@ -2185,7 +2185,7 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover; }
 
-/* line 51, blocks/menu.scss */
+/* line 50, blocks/menu.scss */
 .accorderdeon-menu__title {
   position: absolute;
   top: 100%;
@@ -2200,16 +2200,16 @@ textarea {
   white-space: nowrap;
   margin-top: -1.25rem; }
 
-/* line 64, blocks/menu.scss */
+/* line 63, blocks/menu.scss */
 .accorderdeon-menu__content {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   overflow: hidden;
   max-width: 0;
-  -webkit-transition: 1.3s;
-  transition: 1.3s; }
+  -webkit-transition: .7s;
+  transition: .7s; }
 
-/* line 72, blocks/menu.scss */
+/* line 71, blocks/menu.scss */
 .accorderdeon-menu__text {
   padding: 1.25rem;
   width: 31.25rem; }

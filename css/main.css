@@ -869,11 +869,16 @@ textarea {
 .nav_hamburger {
   width: auto; }
   /* line 12, blocks/nav.scss */
+  .nav_hamburger .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  /* line 16, blocks/nav.scss */
   .nav_hamburger .nav__item {
     display: block;
-    text-align: center;
-    opacity: 1; }
-    /* line 17, blocks/nav.scss */
+    text-align: center; }
+    /* line 22, blocks/nav.scss */
     .nav_hamburger .nav__item:after {
       display: block;
       margin: 0.9375rem auto; }
@@ -882,20 +887,16 @@ textarea {
     .nav_hamburger {
       display: block; } }
 
-/* line 29, blocks/nav.scss */
+/* line 34, blocks/nav.scss */
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
 
-/* line 37, blocks/nav.scss */
+/* line 42, blocks/nav.scss */
 .nav__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -904,7 +905,7 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 0.9375rem; }
-  /* line 42, blocks/nav.scss */
+  /* line 47, blocks/nav.scss */
   .nav__item:after {
     content: "";
     width: 0.25rem;
@@ -913,21 +914,21 @@ textarea {
     border-radius: 50%;
     display: block;
     margin-left: 0.9375rem; }
-  /* line 52, blocks/nav.scss */
+  /* line 57, blocks/nav.scss */
   .nav__item:last-child {
     margin-right: 0; }
-    /* line 55, blocks/nav.scss */
+    /* line 60, blocks/nav.scss */
     .nav__item:last-child:after {
       display: none; }
 
-/* line 61, blocks/nav.scss */
+/* line 66, blocks/nav.scss */
 .nav__link {
   text-decoration: none;
   color: #fff;
   font-size: 0.8125rem;
   text-transform: uppercase; }
 
-/* line 68, blocks/nav.scss */
+/* line 73, blocks/nav.scss */
 .nav__link_hamb {
   font-size: 1.5rem; }
 

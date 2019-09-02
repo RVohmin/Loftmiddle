@@ -58,12 +58,20 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // скрипт для секции меню
-  $('.accorderdeon-menu__elem').on("click", function (e) {
-    e.preventDefault();
-    $(".accorderdeon-menu__elem").removeClass("active");
-    $(this).addClass('active');
+  // $('.accorderdeon-menu__elem').on("click", function (e) {
+  //   e.preventDefault();
+  //   $(".accorderdeon-menu__elem").removeClass("active");
+  //   $(this).addClass('active');
+  // });
 
-  });
+$(".accorderdeon-menu__elem").click(function(e) {
+  e.preventDefault();
+  $(".accorderdeon-menu__elem").not(this).removeClass('active');
+  $(this).toggleClass('active');
+})
+
+
+
   //скрипт для popup
   $('.reviews .review__button-wrap .review__view').on("click", function (e) {
     e.preventDefault();

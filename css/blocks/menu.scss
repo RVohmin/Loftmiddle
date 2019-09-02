@@ -35,7 +35,14 @@
 
 // .accorderdeon-menu__elem:hover .accorderdeon-menu__content,
 .accorderdeon-menu__elem.active .accorderdeon-menu__content {
-  max-width: 500px;
+  max-width: rem(500px);
+
+  @include tablets {
+    max-width: 100vw;
+  }
+  @include phones {
+    max-width: 100vw;
+  }
 }
 
 .accorderdeon-menu__btn {
@@ -45,6 +52,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  @include phones {
+    width: rem(40px);
+  }
 }
 
 .accorderdeon-menu__title {
@@ -65,10 +75,13 @@
   color: #fff;
   overflow: hidden;
   max-width: 0;
-  transition: .7s;
+  transition: .5s;
 }
 
 .accorderdeon-menu__text {
   padding: rem(20px);
-  width: rem(500px);
+  max-width: rem(500px);
+  @include phones {
+    font-size: rem(12px);
+  }
 }

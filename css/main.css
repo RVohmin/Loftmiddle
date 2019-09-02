@@ -2200,9 +2200,17 @@ textarea {
 
 /* line 37, blocks/menu.scss */
 .accorderdeon-menu__elem.active .accorderdeon-menu__content {
-  max-width: 500px; }
+  max-width: 31.25rem; }
+  @media screen and (max-width: 768px) {
+    /* line 37, blocks/menu.scss */
+    .accorderdeon-menu__elem.active .accorderdeon-menu__content {
+      max-width: 100vw; } }
+  @media screen and (max-width: 480px) {
+    /* line 37, blocks/menu.scss */
+    .accorderdeon-menu__elem.active .accorderdeon-menu__content {
+      max-width: 100vw; } }
 
-/* line 41, blocks/menu.scss */
+/* line 48, blocks/menu.scss */
 .accorderdeon-menu__btn {
   position: relative;
   width: 5rem;
@@ -2212,8 +2220,12 @@ textarea {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+  @media screen and (max-width: 480px) {
+    /* line 48, blocks/menu.scss */
+    .accorderdeon-menu__btn {
+      width: 2.5rem; } }
 
-/* line 50, blocks/menu.scss */
+/* line 60, blocks/menu.scss */
 .accorderdeon-menu__title {
   position: absolute;
   top: 100%;
@@ -2228,19 +2240,23 @@ textarea {
   white-space: nowrap;
   margin-top: -1.25rem; }
 
-/* line 63, blocks/menu.scss */
+/* line 73, blocks/menu.scss */
 .accorderdeon-menu__content {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   overflow: hidden;
   max-width: 0;
-  -webkit-transition: .7s;
-  transition: .7s; }
+  -webkit-transition: .5s;
+  transition: .5s; }
 
-/* line 71, blocks/menu.scss */
+/* line 81, blocks/menu.scss */
 .accorderdeon-menu__text {
   padding: 1.25rem;
-  width: 31.25rem; }
+  max-width: 31.25rem; }
+  @media screen and (max-width: 480px) {
+    /* line 81, blocks/menu.scss */
+    .accorderdeon-menu__text {
+      font-size: 0.75rem; } }
 
 /* line 1, blocks/work.scss */
 .work {

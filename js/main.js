@@ -62,8 +62,8 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
     $(".accorderdeon-menu__elem").removeClass("active");
     $(this).addClass('active');
-  })
 
+  });
   //скрипт для popup
   $('.reviews .review__button-wrap .review__view').on("click", function (e) {
     e.preventDefault();

@@ -83,7 +83,10 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
     $("#hamburger-menu").removeClass("hamburger-menu_visible");
   });
-
+  $('.nav__link').on("click", function (e) {
+      // e.preventDefault();
+      $("#hamburger-menu").removeClass("hamburger-menu_visible");
+    });
 
 
         });

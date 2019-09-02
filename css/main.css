@@ -1710,9 +1710,9 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 0;
-  -webkit-transition: .7s;
-  transition: .7s;
+  max-height: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
   overflow: hidden; }
 
 /* line 61, blocks/team.scss */
@@ -1748,7 +1748,8 @@ textarea {
   cursor: pointer; }
 /* line 99, blocks/team.scss */
 .team__list--active .team__list-desc {
-  height: 100px; }
+  max-height: 100px;
+  width: 100%; }
   @media screen and (max-width: 768px) {
     /* line 99, blocks/team.scss */
     .team__list--active .team__list-desc {
@@ -1762,33 +1763,33 @@ textarea {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-      /* line 107, blocks/team.scss */
+      /* line 108, blocks/team.scss */
       .team__list--active .team__list-desc .team__list-img {
         margin-right: 0;
         margin-bottom: 1.125rem; } }
-/* line 114, blocks/team.scss */
+/* line 115, blocks/team.scss */
 .team__list--active .team__list-name {
   cursor: pointer; }
-  /* line 117, blocks/team.scss */
+  /* line 118, blocks/team.scss */
   .team__list--active .team__list-name:before {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg); }
-/* line 123, blocks/team.scss */
+/* line 124, blocks/team.scss */
 .team__list--active .team__list-desc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 2.375rem; }
 
-/* line 130, blocks/team.scss */
+/* line 131, blocks/team.scss */
 .team__list-item {
   position: relative; }
 
-/* line 134, blocks/team.scss */
+/* line 135, blocks/team.scss */
 .team__list {
   margin-left: 1.25rem; }
 
-/* line 138, blocks/team.scss */
+/* line 139, blocks/team.scss */
 .team__list-img {
   display: block;
   width: 6.25rem;
@@ -1804,7 +1805,7 @@ textarea {
   -ms-flex-negative: 0;
       flex-shrink: 0; }
 
-/* line 150, blocks/team.scss */
+/* line 151, blocks/team.scss */
 .team__list-pic {
   width: 100%;
   display: block;
@@ -1815,18 +1816,18 @@ textarea {
   -ms-flex-negative: 0;
       flex-shrink: 0; }
 
-/* line 158, blocks/team.scss */
+/* line 159, blocks/team.scss */
 .team__list-text {
   color: #fff;
   font-size: 0.875rem;
   width: 13.75rem;
   line-height: 1.5rem; }
   @media screen and (max-width: 768px) {
-    /* line 158, blocks/team.scss */
+    /* line 159, blocks/team.scss */
     .team__list-text {
       width: 20.75rem; } }
 
-/* line 169, blocks/team.scss */
+/* line 170, blocks/team.scss */
 .team__list-position {
   margin-top: -0.1875rem;
   font-weight: bold;

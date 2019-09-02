@@ -33,9 +33,11 @@
   filter: opacity(.8);
 }
 
-// .accorderdeon-menu__elem:hover .accorderdeon-menu__content, .accorderdeon-menu__elem--active .accorderdeon-menu__content {
-//   max-width: rem(500px);
-// }
+
+// .accorderdeon-menu__elem:hover .accorderdeon-menu__content,
+.accorderdeon-menu__elem.active .accorderdeon-menu__content {
+  max-width: 500px;
+}
 
 .accorderdeon-menu__btn {
   position: relative;

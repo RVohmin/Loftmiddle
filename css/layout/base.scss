@@ -11,11 +11,11 @@ html {
   font-size: 16px;
 
   @include laptop {
-    font-size: rem(14px);
+    font-size: rem(15px);
   }
 
   @include phones {
-    font-size: rem(12px);
+    font-size: rem(14px);
   }
 }
 

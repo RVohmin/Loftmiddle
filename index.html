@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap&subset=cyrillic"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=dc5b0b8d-1fce-4e63-886b-336906fe7fe0&lang=ru_RU">
+  </script>
+  <script src="./js/jquery-3.4.js"></script>
   <title>Burger</title>
 </head>
 
@@ -62,12 +64,12 @@
               <div class="hero__subtitle">натуральные бургеры</div>
             </div>
           </div>
-        </div>
-        <a href="#" class="scroll-down-btn">
-          <svg class="arrow-scroll">
+          </div>
+          <a href="#" class="scroll-down-btn">
+            <svg class="arrow-scroll">
             <use xlink:href="./img/sprite.svg#arrow-scroll"></use>
           </svg>
-        </a>
+          </a>
       </section>
 
       <section class="section best">
@@ -99,8 +101,7 @@
                 <div class="best__desc-title">Ручная сборка</div>
                 <div class="best__desc-text">
                   <p>
-                    Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие
-                    притягивает сюжетный реформаторский пафос. </p>
+                    Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос. </p>
                 </div>
               </div>
             </li>
@@ -125,11 +126,12 @@
       <section class="section dark-burger">
         <div class="container">
           <div class="slider">
-            <a href="#" class="slider-arrow slider-arrow__left">
-              <svg class="slider-arrow-icon">
-                <use xlink:href="./img/sprite.svg#arrow-scroll"></use>
+            <a href="#" class="slider__arrow slider__arrow_left">
+              <svg class="slider__arrow-icon">
+                <use xlink:href="img/sprite.svg#arrow-scroll"></use>
               </svg>
             </a>
+
             <ul class="slider__list">
               <li class="slider__elem">
                 <div class="slider__col">
@@ -137,14 +139,10 @@
                   </div>
                 </div>
                 <div class="slider__col slider__col_content">
-                  <div class="title title_white">Dark BEEF Burger</div>
-                  <div class="slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fuga
-                    doloribus cum quasi voluptatem aliquam obcaecati nulla! Eum, necessitatibus quos
-                    laudantium
-                    neque nostrum nam hic quam vel aliquam libero saepe odit. </div>
+                  <div class="title title--color--white title--slider">Dark BEEF Burger</div>
+                  <div class="slider__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско. </div>
                   <div class="slider__info">
-                    <div class="slider__price"><span>500</span> руб</div>
+                    <div class="slider__price"><span>500</span> рублей</div>
                     <a href="#" class="btn">Заказать</a>
                   </div>
                 </div>
@@ -161,7 +159,7 @@
                         <div class="components__col">
                           <div class="components__pic">
                             <svg class="components__icon" style="fill: red">
-                              <use xlink:href="img/sprite.svg#meat"></use>
+                              <use xlink:href="img/sprite.svg#beef"></use>
                             </svg>
                           </div>
                         </div>
@@ -175,8 +173,68 @@
                       <li class="components__elem">
                         <div class="components__col">
                           <div class="components__pic">
-                            <svg class="components__icon" style="fill: green">
-                              <use xlink:href="img/sprite.svg#meat"></use>
+                            <svg class="components__icon" style="fill: #f8b43a">
+                              <use xlink:href="img/sprite.svg#burger"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="components__col">
+                          <div class="components__component">Булочки</div>
+                        </div>
+                        <div class="components__col">
+                          <div class="components__weight">100г</div>
+                        </div>
+                      </li>
+                      <li class="components__elem">
+                        <div class="components__col">
+                          <div class="components__pic">
+                            <svg class="components__icon" style="fill: #8BC03F">
+                              <use xlink:href="img/sprite.svg#salad"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="components__col">
+                          <div class="components__component">Зелень</div>
+                        </div>
+                        <div class="components__col">
+                          <div class="components__weight">70г</div>
+                        </div>
+                      </li>
+                      <li class="components__elem">
+                        <div class="components__col">
+                          <div class="components__pic">
+                            <svg class="components__icon" style="fill: #E35028">
+                              <use xlink:href="img/sprite.svg#sauce"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="components__col">
+                          <div class="components__component">Соус</div>
+                        </div>
+                        <div class="components__col">
+                          <div class="components__weight">150г</div>
+                        </div>
+                      </li>
+                      <li class="components__elem">
+                        <div class="components__col">
+                          <div class="components__pic">
+                            <svg class="components__icon" style="fill: #8BC03F">
+                              <use xlink:href="img/sprite.svg#cucumber"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="components__col">
+                          <div class="components__component">Овощи</div>
+                        </div>
+                        <div class="components__col">
+                          <div class="components__weight">20г</div>
+                        </div>
+                      </li>
+                      <li class="components__elem">
+                        <div class="components__col">
+                          <div class="components__pic">
+                            <svg class="components__icon" style="fill: #F9B43B">
+                              <use xlink:href="img/sprite.svg#cheese"></use>
                             </svg>
                           </div>
                         </div>
@@ -187,29 +245,25 @@
                           <div class="components__weight">2000г</div>
                         </div>
                       </li>
-                      <li class="components__elem">
-                        <div class="components__col">
-                          <div class="components__pic">
-                            <svg class="components__icon">
-                              <use xlink:href="img/sprite.svg#meat"></use>
-                            </svg>
-                          </div>
-                        </div>
-                        <div class="components__col">
-                          <div class="components__component">Огурец</div>
-                        </div>
-                        <div class="components__col">
-                          <div class="components__weight">20г</div>
-                        </div>
-                      </li>
                     </ul>
+                  </div>
+                </div>
+                <div class="kkal">
+                  <div class="kkal__pic">
+                    <svg class="kkal__icon">
+                      <use xlink:href="./img/sprite.svg#kkal"></use>
+                    </svg>
+                  </div>
+                  <div class="kkal__desc">
+                    <div class="kkal__desc-title">1200</div>
+                    <div class="kkal__desc-text">ккал</div>
                   </div>
                 </div>
               </li>
             </ul>
-            <a href="#" class="slider-arrow slider-arrow__right">
-              <svg class="slider-arrow-icon">
-                <use xlink:href="./img/sprite.svg#arrow-scroll"></use>
+            <a href="#" class="slider__arrow slider__arrow_right">
+              <svg class="slider__arrow-icon">
+                <use xlink:href="img/sprite.svg#arrow-scroll"></use>
               </svg>
             </a>
           </div>
@@ -217,14 +271,14 @@
       </section>
 
       <section class="section team">
-        <div class="container ">
+        <div class="container team__container">
 
           <div class="team-wrap">
             <div class="title team__title">Команда</div>
 
-            <ul class="team__list">
-              <li class="team__list-item ">
-                <div class="team__list-member">
+            <ul class="team__list" id="teamList">
+              <li class="team__list-item  team__list--active">
+                <div class="team__list-member ">
                   <a href="#" class="team__list-name">Дэниэл Редклиф</a>
                   <div class="team__list-desc">
                     <div class="team__list-img">
@@ -237,9 +291,9 @@
                   </div>
                 </div>
               </li>
-              <li class="team__list-item team__list--active">
+              <li class="team__list-item">
                 <div class="team__list-member">
-                  <div class="team__list-name">Ричард Джеймс</div>
+                  <a href="#" class="team__list-name">Ричард Джеймс</a>
                   <div class="team__list-desc">
                     <div class="team__list-img">
                       <img src="../img/fourth/small-photo.jpg" alt="memeber of team" class="team__list-pic">
@@ -253,7 +307,7 @@
               </li>
               <li class="team__list-item">
                 <div class="team__list-member">
-                  <div class="team__list-name">Джейк Финн</div>
+                  <a href="#" class="team__list-name">Джейк Финн</a>
                   <div class="team__list-desc">
                     <div class="team__list-img">
                       <img src="../img/fourth/small-photo.jpg" alt="memeber of team" class="team__list-pic">
@@ -267,7 +321,7 @@
               </li>
               <li class="team__list-item">
                 <div class="team__list-member">
-                  <div class="team__list-name">Николай Иванов</div>
+                  <a href="#" class="team__list-name">Николай Иванов</a>
                   <div class="team__list-desc">
                     <div class="team__list-img">
                       <img src="../img/fourth/small-photo.jpg" alt="memeber of team" class="team__list-pic">
@@ -289,28 +343,24 @@
         <div class="container">
           <h2 class="title title--color--white title--menu">Меню</h2>
           <div class="accorderdeon-menu">
-            <ul class="accorderdeon-menu__list">
+            <ul class="accorderdeon-menu__list" id="accorderdeon-menu__list">
               <li class="accorderdeon-menu__elem">
                 <a href="#" class="accorderdeon-menu__btn" style="background-image: url('./img/five/accordeon1.jpg');">
                   <div class="accorderdeon-menu__title">Для мясоедов</div>
                 </a>
                 <div class="accorderdeon-menu__content">
                   <div class="accorderdeon-menu__text">
-                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Меня сбить
-                    рукопись курсивных, имеет осталось оксмокс до, маленький необходимыми за путь жизни маленькая,
-                    которой даже. Курсивных ведущими собрал путь.
+                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Меня сбить рукопись курсивных, имеет осталось оксмокс до, маленький необходимыми за путь жизни маленькая, которой даже. Курсивных ведущими собрал путь.
                   </div>
                 </div>
               </li>
-              <li class="accorderdeon-menu__elem accorderdeon-menu__elem--active">
+              <li class="accorderdeon-menu__elem">
                 <a href="#" class="accorderdeon-menu__btn" style="background-image: url('./img/five/accordeon2.jpg');">
                   <div class="accorderdeon-menu__title">Вегетарианское</div>
                 </a>
                 <div class="accorderdeon-menu__content">
                   <div class="accorderdeon-menu__text">
-                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Которое знаках
-                    пунктуация, власти букв строчка переулка толку по всей диких последний назад взгляд вопроса меня не
-                    наш одна, жизни обеспечивает.
+                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Которое знаках пунктуация, власти букв строчка переулка толку по всей диких последний назад взгляд вопроса меня не наш одна, жизни обеспечивает.
                   </div>
                 </div>
               </li>
@@ -320,9 +370,7 @@
                 </a>
                 <div class="accorderdeon-menu__content">
                   <div class="accorderdeon-menu__text">
-                    Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Журчит, имеет
-                    силуэт! Родного встретил собрал залетают рекламных своего если, парадигматическая рукопись
-                    маленький? Великий скатился залетают сбить имеет назад послушавшись.
+                    Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Журчит, имеет силуэт! Родного встретил собрал залетают рекламных своего если, парадигматическая рукопись маленький? Великий скатился залетают сбить имеет назад послушавшись.
                   </div>
                 </div>
               </li>
@@ -339,10 +387,7 @@
               <div class="review__photo" style="background-image: url('./img/six/photo-1.jpg')"></div>
               <div class="review__hover">
                 <div class="review__title">Константин Спилберг</div>
-                <div class="review__shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно
-                  забыть...
-                  Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
-                  расплавленным.
+                <div class="review__shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                 </div>
                 <div class="review__button-wrap"><a class="review__view" href="#full-review">Подробнее</a></div>
               </div>
@@ -353,10 +398,7 @@
               <div class="review__photo" style="background-image: url('./img/six/photo-2.jpg')"></div>
               <div class="review__hover">
                 <div class="review__title">Константин Спилберг</div>
-                <div class="review__shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно
-                  забыть...
-                  Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
-                  расплавленным.
+                <div class="review__shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                 </div>
                 <div class="review__button-wrap"><a class="review__view" href="#full-review">Подробнее</a></div>
               </div>
@@ -367,10 +409,7 @@
               <div class="review__photo" style="background-image: url('./img/six/photo-3.jpg')"></div>
               <div class="review__hover">
                 <div class="review__title">Константин Спилберг</div>
-                <div class="review__shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно
-                  забыть...
-                  Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
-                  расплавленным.
+                <div class="review__shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                 </div>
                 <div class="review__button-wrap"><a class="review__view" href="#full-review">Подробнее</a></div>
               </div>
@@ -381,10 +420,7 @@
               <div class="review__photo" style="background-image: url('./img/six/photo-4.jpg')"></div>
               <div class="review__hover">
                 <div class="review__title">Константин Спилберг</div>
-                <div class="review__shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно
-                  забыть...
-                  Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
-                  расплавленным.
+                <div class="review__shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                 </div>
                 <div class="review__button-wrap"><a class="review__view" href="#full-review">Подробнее</a></div>
               </div>
@@ -395,10 +431,7 @@
               <div class="review__photo" style="background-image: url('./img/six/photo-5.jpg')"></div>
               <div class="review__hover">
                 <div class="review__title">Константин Спилберг</div>
-                <div class="review__shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно
-                  забыть...
-                  Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
-                  расплавленным.
+                <div class="review__shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                 </div>
                 <div class="review__button-wrap"><a class="review__view" href="#full-review">Подробнее</a></div>
               </div>
@@ -409,10 +442,7 @@
               <div class="review__photo" style="background-image: url('./img/six/photo-6.jpg')"></div>
               <div class="review__hover">
                 <div class="review__title">Константин Спилберг</div>
-                <div class="review__shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно
-                  забыть...
-                  Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
-                  расплавленным.
+                <div class="review__shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                 </div>
                 <div class="review__button-wrap"><a class="review__view" href="#full-review">Подробнее</a></div>
               </div>
@@ -423,10 +453,7 @@
               <div class="review__photo" style="background-image: url('./img/six/photo-7.jpg')"></div>
               <div class="review__hover">
                 <div class="review__title">Константин Спилберг</div>
-                <div class="review__shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно
-                  забыть...
-                  Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
-                  расплавленным.
+                <div class="review__shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                 </div>
                 <div class="review__button-wrap"><a class="review__view" href="#full-review">Подробнее</a></div>
               </div>
@@ -437,10 +464,7 @@
               <div class="review__photo" style="background-image: url('./img/six/photo-8.jpg')"></div>
               <div class="review__hover">
                 <div class="review__title">Константин Спилберг</div>
-                <div class="review__shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно
-                  забыть...
-                  Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
-                  расплавленным.
+                <div class="review__shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                 </div>
                 <div class="review__button-wrap"><a class="review__view" href="#full-review">Подробнее</a></div>
               </div>
@@ -543,9 +567,11 @@
 
       <section class="section contacts">
         <div class="conacts-wrap">
-          <div class="yandex-map" id="map">
+          <!-- <div class="yandex-map" id="map">
             <img class="yandex-map__img" src="/img/eight/map.jpg" alt="">
-          </div>
+          </div> -->
+          <div id="map" class="map"></div>
+
           <footer class="footer">
             <div class="container">
               <div class="footer-wrap">
@@ -597,47 +623,131 @@
                 </div>
           </footer>
 
-        </div>
+          </div>
 
       </section>
-    </div>
+      </div>
 
-  </div>
+      </div>
 
 
-  </div>
 
-  <ul class="fixed-menu">
-    <li class="fixed-menu__item ">
-      <a href="#" class="fixed-menu__dot"></a>
-    </li>
-    <li class="fixed-menu__item fixed-menu__item--active">
-      <a href="#" class="fixed-menu__dot"></a>
-    </li>
-    <li class="fixed-menu__item">
-      <a href="#" class="fixed-menu__dot"></a>
-    </li>
-    <li class="fixed-menu__item">
-      <a href="#" class="fixed-menu__dot"></a>
-    </li>
-    <li class="fixed-menu__item">
-      <a href="#" class="fixed-menu__dot"></a>
-    </li>
-    <li class="fixed-menu__item">
-      <a href="#" class="fixed-menu__dot"></a>
-    </li>
-    <li class="fixed-menu__item">
-      <a href="#" class="fixed-menu__dot"></a>
-    </li>
-    <li class="fixed-menu__item">
-      <a href="#" class="fixed-menu__dot"></a>
-    </li>
-    <li class="fixed-menu__item">
-      <a href="#" class="fixed-menu__dot"></a>
-    </li>
-  </ul>
+      <ul class="fixed-menu">
+        <li class="fixed-menu__item ">
+          <a href="#" class="fixed-menu__dot"></a>
+        </li>
+        <li class="fixed-menu__item fixed-menu__item--active">
+          <a href="#" class="fixed-menu__dot"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a href="#" class="fixed-menu__dot"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a href="#" class="fixed-menu__dot"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a href="#" class="fixed-menu__dot"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a href="#" class="fixed-menu__dot"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a href="#" class="fixed-menu__dot"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a href="#" class="fixed-menu__dot"></a>
+        </li>
+        <li class="fixed-menu__item">
+          <a href="#" class="fixed-menu__dot"></a>
+        </li>
+      </ul>
+      <div class="popup">
+        <div class="popup__wrap">
+          <a href="#" class="popup__close"></a>
+          <div class="popup__title">Константин Спилберг</div>
+          <div class="popup__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно
+            забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          //карты
 
-  </div>
+          ymaps.ready(function() {
+            var myMap = new ymaps.Map('map', {
+                center: [59.94782778, 30.26796460],
+                zoom: 10
+              }, {
+                searchControlProvider: 'yandex#search',
+              }),
+
+              // Создаём макет содержимого.
+              MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+              ),
+
+              myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                hintContent: 'Собственный значок метки',
+                balloonContent: 'Это красивая метка'
+              }, {
+                iconLayout: 'default#image',
+                iconImageHref: './img/icons/map-marker.svg',
+                iconImageSize: [48, 48],
+                iconImageOffset: [-5, -38]
+              }),
+
+              myPlacemarkWithContent = new ymaps.Placemark([60.03597581, 30.35779498], {
+                hintContent: 'Собственный значок метки с контентом',
+                balloonContent: 'А эта — новогодняя',
+                iconContent: '10'
+              }, {
+                iconLayout: 'default#imageWithContent',
+                iconImageHref: './img/icons/map-marker.svg',
+                iconImageSize: [48, 48],
+                iconImageOffset: [-24, -24],
+                iconContentOffset: [15, 15],
+                iconContentLayout: MyIconContentLayout
+              });
+            myMap.behaviors.disable('scrollZoom');
+
+            myMap.geoObjects
+              .add(myPlacemark)
+              .add(myPlacemarkWithContent);
+
+          });
+
+          // скрипт для секции team
+          var teamList = document.getElementById("teamList");
+          const li = teamList.getElementsByClassName("team__list-item");
+
+          for (var i = 0; i < li.length; i++) {
+            li[i].addEventListener("click", function(e) {
+              e.preventDefault();
+              let current = document.getElementsByClassName("team__list--active");
+              current[0].className = current[0].className.replace(" team__list--active", "");
+              this.className += " team__list--active";
+            });
+          }
+
+          // скрипт для секции меню
+          $('.accorderdeon-menu__elem').on("click", function(e) {
+            e.preventDefault();
+            $(".accorderdeon-menu__elem").removeClass("active");
+            $(this).addClass('active');
+          })
+
+          //скрипт для popup
+          $('.reviews .review__button-wrap .review__view').on("click", function(e) {
+            e.preventDefault();
+            $(".popup").addClass("active");
+          });
+          $('.popup__close').on("click", function(e) {
+            e.preventDefault();
+            $(".popup").removeClass("active");
+          });
+        });
+      </script>
+
 </body>
 
 

@@ -121,54 +121,40 @@
   opacity: 1;
 }
 
-.radio__input:checked+.radio__content {
-  color: #e35028;
-}
-
 .radio__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
+  justify-content: center;
   margin-right: rem(1px);
-
 }
 
 .radio__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  width: rem(15px);
-  height: rem(15px);
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background-color: #fff;
   margin-right: rem(9px);
   flex: 0 0 auto;
-}
 
-.radio__btn:after {
-  content: '';
-  display: block;
-  width: rem(8px);
-  height: rem(8px);
-  background-color: #e35028;
-  border-radius: 50%;
-  opacity: 0;
-  transition: 0.3s;
+  &::after {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 7px;
+    background-color: #e35028;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.5s;
+  }
 }
 
 .radio__text {
   color: #fff;
   font-size: rem(14px);
-  letter-spacing: -.4px;
+  letter-spacing: rem(-.4px);
   margin-right: rem(20px);
 }
 

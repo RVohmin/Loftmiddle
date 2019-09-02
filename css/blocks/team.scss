@@ -3,6 +3,10 @@
   position: relative;
 }
 
+.team__container {
+  // position: relative;
+}
+
 .team-wrap {
   position: absolute;
   top: 0;
@@ -22,6 +26,12 @@
     flex-direction: column;
     padding: 0;
   }
+
+  @include phones {
+    display: flex;
+    flex-direction: column;
+
+  }
 }
 
 .team__list {
@@ -32,13 +42,15 @@
 
 .team__list-item {
   margin-bottom: rem(15px);
+  cursor: pointer;
+
 }
 
 .team__title {
   margin-bottom: rem(45px);
 }
 
-.team__list-member {}
+// .team__list-member {}
 
 .team__list-desc {
   display: flex;
@@ -52,7 +64,7 @@
   font-size: rem(13px);
   margin-bottom: rem(17px);
   display: block;
-
+  cursor: pointer;
 
   &:before {
     content: '';
@@ -64,6 +76,7 @@
     border-left: rem(5px) solid transparent;
     border-right: rem(5px) solid transparent;
     border-top: rem(7px) solid #f9b43b;
+    cursor: pointer;
 
 
   }
@@ -80,6 +93,8 @@
   .team__list-name {
     margin-bottom: rem(12px);
     color: $yellow;
+    cursor: pointer;
+
   }
 
   .team__list-desc {
@@ -98,6 +113,8 @@
   }
 
   .team__list-name {
+    cursor: pointer;
+
     &:before {
       transform: rotate(180deg);
     }

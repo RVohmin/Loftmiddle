@@ -7,9 +7,10 @@
   background: rgba(#2f3234, .99);
   align-items: center;
   justify-content: center;
+  color: #c1c2c2;
   z-index: 100;
   display: none;
-  transition: opacity .3s;
+  transition: opacity 3s;
 
   &_visible {
     display: flex;
@@ -47,6 +48,6 @@
 
   use {
     fill: #c1c2c2;
-    transition: fill .3s;
+    transition: fill .4s;
   }
 }

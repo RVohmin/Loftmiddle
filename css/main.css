@@ -964,7 +964,7 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    opacity: 0; }
+    opacity: 1; }
 
 /* line 20, blocks/hamburger-menu.scss */
 .hamburger-menu__logo {
@@ -2402,19 +2402,19 @@ textarea {
 .popup__wrap {
   position: relative;
   background-color: #fff;
-  padding: 30px 22px;
+  padding: 1.875rem 1.375rem;
   border-radius: 5px;
   border: 1px solid black;
-  width: 460px; }
+  width: 28.75rem; }
 
 /* line 40, blocks/popup.scss */
 .popup__close {
   position: absolute;
-  right: 12px;
+  right: 0.75rem;
   bottom: calc(100% - 40px);
   display: block;
-  width: 25px;
-  height: 25px;
+  width: 1.5625rem;
+  height: 1.5625rem;
   background-color: #fff;
   border-radius: 50%; }
 
@@ -2436,3 +2436,93 @@ textarea {
 .popup__close:before {
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
           transform: translate(-50%, -50%) rotate(-45deg); }
+
+/* line 1, blocks/hamburger-menu.scss */
+.hamburger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(47, 50, 52, 0.99);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 100;
+  display: none;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s; }
+  /* line 14, blocks/hamburger-menu.scss */
+  .hamburger-menu_visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1; }
+
+/* line 20, blocks/hamburger-menu.scss */
+.hamburger-menu__logo {
+  position: absolute;
+  top: 0.625rem;
+  left: 1.875rem; }
+
+/* line 26, blocks/hamburger-menu.scss */
+.hamburger-menu__close {
+  position: absolute;
+  right: 0.9375rem;
+  top: 0.9375rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  padding: 0.9375rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; }
+  /* line 37, blocks/hamburger-menu.scss */
+  .hamburger-menu__close:hover .hamburger-menu__close-icon use {
+    fill: #fff; }
+
+/* line 44, blocks/hamburger-menu.scss */
+.hamburger-menu__close-icon {
+  width: 100%;
+  height: 100%; }
+  /* line 48, blocks/hamburger-menu.scss */
+  .hamburger-menu__close-icon use {
+    fill: #c1c2c2;
+    -webkit-transition: fill .3s;
+    transition: fill .3s; }
+
+/* line 1, blocks/hamburger-menu-link.scss */
+.hamburger-menu-link {
+  vertical-align: middle;
+  position: relative;
+  height: 1.375rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1.875rem;
+  display: none; }
+  @media screen and (max-width: 768px) {
+    /* line 1, blocks/hamburger-menu-link.scss */
+    .hamburger-menu-link {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex; } }
+
+/* line 16, blocks/hamburger-menu-link.scss */
+.hamburger-menu-link__bars, .hamburger-menu-link__bars:before, .hamburger-menu-link__bars:after {
+  background: #fff;
+  width: 1.5rem;
+  height: 0.3125rem;
+  border-radius: 0.1875rem; }
+/* line 25, blocks/hamburger-menu-link.scss */
+.hamburger-menu-link__bars:before, .hamburger-menu-link__bars:after {
+  content: "";
+  display: block;
+  position: absolute; }
+/* line 32, blocks/hamburger-menu-link.scss */
+.hamburger-menu-link__bars:before {
+  top: 0; }
+/* line 36, blocks/hamburger-menu-link.scss */
+.hamburger-menu-link__bars:after {
+  bottom: 0; }

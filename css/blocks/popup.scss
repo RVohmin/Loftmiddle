@@ -31,19 +31,19 @@
 .popup__wrap {
   position: relative;
   background-color: #fff;
-  padding: 30px 22px;
+  padding: rem(30px) rem(22px);
   border-radius: 5px;
   border: 1px solid black;
-  width: 460px;
+  width: rem(460px);
 }
 
 .popup__close {
   position: absolute;
-  right: 12px;
+  right: rem(12px);
   bottom: calc(100% - 40px);
   display: block;
-  width: 25px;
-  height: 25px;
+  width: rem(25px);
+  height: rem(25px);
   background-color: #fff;
   border-radius: 50%;
 }

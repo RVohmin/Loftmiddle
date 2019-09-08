@@ -43,6 +43,28 @@ document.addEventListener("DOMContentLoaded", function () {
       .add(myPlacemarkWithContent);
 
   });
+  // слайдер
+
+// const left = document.querySelector("#left");
+// const right = document.querySelector("#right");
+// const items = document.querySelector("#items");
+
+// right.addEventListener("click", function() {
+//   loop("right");
+// });
+
+// left.addEventListener("click", function() {
+//   loop("left");
+// });
+
+// function loop(direction) {
+//   if (direction === "right") {
+//     items.appendChild(items.firstElementChild);
+//   } else {
+//     items.insertBefore(items.lastElementChild, items.firstElementChild);
+//   }
+// }
+
 
   // скрипт для секции team
   var teamList = document.getElementById("teamList");
@@ -56,31 +78,13 @@ document.addEventListener("DOMContentLoaded", function () {
       this.className += " team__list--active";
     });
   }
-
-  // скрипт для секции меню
-  // $('.accorderdeon-menu__elem').on("click", function (e) {
-  //   e.preventDefault();
-  //   $(".accorderdeon-menu__elem").removeClass("active");
-  //   $(this).addClass('active');
-  // });
-
+  //аккордеон
 $(".accorderdeon-menu__elem").click(function(e) {
   e.preventDefault();
   $(".accorderdeon-menu__elem").not(this).removeClass('active');
   $(this).toggleClass('active');
 })
 
-
-
-  //скрипт для popup
-  $('.reviews .review__button-wrap .review__view').on("click", function (e) {
-    e.preventDefault();
-    $(".popup").addClass("active");
-  });
-  $('.popup__close').on("click", function (e) {
-    e.preventDefault();
-    $(".popup").removeClass("active");
-  });
 
   //скрипт для гамбургер-меню
   $('.hamburger-menu-link').on("click", function (e) {
@@ -96,5 +100,74 @@ $(".accorderdeon-menu__elem").click(function(e) {
       $("#hamburger-menu").removeClass("hamburger-menu_visible");
     });
 
+ // скрипт для секции order (form)
 
-        });
+    //валидация формы
+    var myForm = document.querySelector("#form");
+    var send = document.querySelector("#send");
+
+    send.addEventListener('click', event => {
+      event.preventDefault();
+
+      if (validateForm(myForm)) {
+        let data = new FormData(myForm);
+        data.append('name', myForm.elements.name.value);
+        data.append('phone', myForm.elements.phone.value);
+        data.append("comment", myForm.elements.desc.value);
+        data.append("to", "frodo@gmail.com");
+        // проверка содержимого data
+//         for (var pair of data.entries()) {
+//     console.log(pair[0]+ ', ' + pair[1]);
+// }
+        const xhr = new XMLHttpRequest();
+        xhr.responseType = 'json';
+        xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
+        xhr.send(data);
+        xhr.addEventListener('load', () => {
+          if (xhr.response.status == 1) {
+            console.log('Получилось!!!');
+            console.log(xhr.response);
+          };
+        })
+    }
+
+      function validateForm(form) {
+        let valide = true;
+        if (!validateField(form.elements.name)) {
+          valide = false;
+        }
+        if (!validateField(form.elements.phone)) {
+          valide = false;
+        }
+        return valide;
+      }
+    function validateField(field) {
+      field.nextElementSibling.textContent = field.validationMessage;
+      if (document.getElementById('desc').value == '') {
+          form.elements.desc.nextElementSibling.textContent = 'Заполните это поле Please fill in this field.';
+          valide = false;
+      } else {
+          form.elements.desc.nextElementSibling.textContent = '';
+        }
+      return field.checkValidity();
+      }
+    })
+
+  $('#fullpage').fullpage({
+    menu: '#myMenu'
+  });
+ //скрипт для popup
+  $('.reviews .review__button-wrap .review__view').on("click", function (e) {
+    e.preventDefault();
+    $("body").css('overflow', 'hidden');
+    document.body.style.overflow = 'hidden';
+    $(".popup").addClass("active");
+
+  });
+  $('.popup__close').on("click", function (e) {
+    e.preventDefault();
+    $("body").css('overflow', 'scroll');
+    $(".popup").removeClass("active");
+  });
+
+});

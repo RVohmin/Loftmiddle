@@ -22,12 +22,16 @@
     font-size: rem(20px);
   }
 }
-
+.lock {
+  overflow: hidden;
+}
 .popup.active {
   left: 0;
   opacity: 1;
 }
-
+body.active {
+  overflow: hidden;
+}
 .popup__wrap {
   position: relative;
   background-color: #fff;

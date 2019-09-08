@@ -4,6 +4,8 @@
 
 .best__container {
   margin-top: rem(-25px);
+  display: flex;
+  align-items: center;
 
   @include tablets {
     margin: 0;

@@ -11,13 +11,14 @@
   </script>
   <script src="./js/jquery-3.4.js"></script>
   <title>Burger</title>
+  <script src="./js/fullpage.js"></script>
 </head>
 
 <body>
   <div class="wrapper">
-    <div class="wrapper__content">
+    <div class="wrapper__content" id="fullpage">
 
-      <section class="section section--non-centered hero">
+      <section class="section section--non-centered hero" data-anchor="about">
         <div class="container hero__container">
           <header class="header">
             <svg class="logo">
@@ -27,29 +28,29 @@
               <nav class="nav">
                 <ul class="nav__list">
                   <li class="nav__item">
-                    <a href="#" class="nav__link">О нас</a>
+                    <a href="#best" class="nav__link">О нас</a>
                   </li>
                   <li class="nav__item">
-                    <a href="#" class="nav__link">Бургеры</a>
+                    <a href="#burger" class="nav__link">Бургеры</a>
                   </li>
                   <li class="nav__item">
-                    <a href="#" class="nav__link">Команда</a>
+                    <a href="#team" class="nav__link">Команда</a>
                   </li>
                   <li class="nav__item">
-                    <a href="#" class="nav__link">Меню</a>
+                    <a href="#menu" class="nav__link">Меню</a>
                   </li>
                   <li class="nav__item">
-                    <a href="#" class="nav__link">Отзывы</a>
+                    <a href="#reviews" class="nav__link">Отзывы</a>
                   </li>
                   <li class="nav__item">
-                    <a href="#" class="nav__link">Как мы работаем</a>
+                    <a href="#work" class="nav__link">Как мы работаем</a>
                   </li>
                   <li class="nav__item">
-                    <a href="#" class="nav__link">Контакты</a>
+                    <a href="#contacts" class="nav__link">Контакты</a>
                   </li>
                 </ul>
               </nav>
-              <a href="#" class="btn">Заказать</a>
+              <a href="#order" class="btn">Заказать</a>
               <a class="hamburger-menu-link" href="">
                 <div class="hamburger-menu-link__bars"></div>
               </a>
@@ -72,61 +73,64 @@
           </a>
       </section>
 
-      <section class="section best" id="about">
-        <div class="container best__container">
-          <div class="title title--color--black title--centered title__best">Мы лучшие</div>
-          <ul class="best__list">
-            <li class="best__item">
-              <div class="best__icon">
-                <svg class="meat">
-                  <use xlink:href="./img/sprite.svg#meat"></use>
-                </svg>
-              </div>
-              <div class="best__desc">
-                <div class="best__desc-title">100% свежее мясо </div>
-                <div class="best__desc-text">
-                  <p>
-                    Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
-                  </p>
+      <section class="section best" data-anchor="best">
+        <div class="">
+
+          <div class="container best__container">
+            <div class="title title--color--black title--centered title__best">Мы лучшие</div>
+            <ul class="best__list">
+              <li class="best__item">
+                <div class="best__icon">
+                  <svg class="meat">
+                    <use xlink:href="./img/sprite.svg#meat"></use>
+                  </svg>
                 </div>
-              </div>
-            </li>
-            <li class="best__item">
-              <div class="best__icon">
-                <svg class="best__picture hand">
-                  <use xlink:href="./img/sprite.svg#hand"></use>
-                </svg>
-              </div>
-              <div class="best__desc">
-                <div class="best__desc-title">Ручная сборка</div>
-                <div class="best__desc-text">
-                  <p>
-                    Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос. </p>
+                <div class="best__desc">
+                  <div class="best__desc-title">100% свежее мясо </div>
+                  <div class="best__desc-text">
+                    <p>
+                      Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="best__item">
-              <div class="best__icon">
-                <svg class="natural">
-                  <use xlink:href="./img/sprite.svg#natural"></use>
-                </svg>
-              </div>
-              <div class="best__desc">
-                <div class="best__desc-title">Натуральные ингридиенты</div>
-                <div class="best__desc-text">
-                  <p>
-                    Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. </p>
+              </li>
+              <li class="best__item">
+                <div class="best__icon">
+                  <svg class="best__picture hand">
+                    <use xlink:href="./img/sprite.svg#hand"></use>
+                  </svg>
                 </div>
-              </div>
-            </li>
-          </ul>
+                <div class="best__desc">
+                  <div class="best__desc-title">Ручная сборка</div>
+                  <div class="best__desc-text">
+                    <p>
+                      Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос. </p>
+                  </div>
+                </div>
+              </li>
+              <li class="best__item">
+                <div class="best__icon">
+                  <svg class="natural">
+                    <use xlink:href="./img/sprite.svg#natural"></use>
+                  </svg>
+                </div>
+                <div class="best__desc">
+                  <div class="best__desc-title">Натуральные ингридиенты</div>
+                  <div class="best__desc-text">
+                    <p>
+                      Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <section class="section dark-burger" id="burger">
-        <div class="container">
+      <section class="section dark-burger" data-anchor="burger">
+        <div class="container dark-burger--container">
           <div class="slider">
-            <a href="#" class="slider__arrow slider__arrow_left">
+            <a href="#" class="slider__arrow slider__arrow_left" >
               <svg class="slider__arrow-icon">
                 <use xlink:href="img/sprite.svg#arrow-scroll"></use>
               </svg>
@@ -260,6 +264,7 @@
                   </div>
                 </div>
               </li>
+
             </ul>
             <a href="#" class="slider__arrow slider__arrow_right">
               <svg class="slider__arrow-icon">
@@ -270,7 +275,7 @@
         </div>
       </section>
 
-      <section class="section team" id="team">
+      <section class="section team" data-anchor="team">
         <div class="container team__container">
 
           <div class="team-wrap">
@@ -339,7 +344,7 @@
         </div>
       </section>
 
-      <section class="section section--non-centered menu" id="menu">
+      <section class="section section--non-centered menu" data-anchor="menu">
         <div class="container">
           <h2 class="title title--color--white title--menu">Меню</h2>
           <div class="accorderdeon-menu">
@@ -380,7 +385,7 @@
         </div>
       </section>
 
-      <section class="section reviews" id="reviews">
+      <section class="section reviews" data-anchor="reviews">
         <ul class="reviews__list">
           <li class="reviews__item">
             <div class="review">
@@ -473,26 +478,28 @@
         </ul>
       </section>
 
-      <section class="section work">
+      <section class="section work" data-anchor="work">
         <div class="container">
 
         </div>
       </section>
 
-      <section class="section order">
+      <section class="section order" data-anchor="order">
         <div class="container order__container">
           <div class="title title--centered">Закажите доставку</div>
           <div class="form">
-            <form action="" class="form__elem">
+            <form action="" class="form__elem" id="form">
               <div class="form__column">
                 <div class="form__row">
                   <label class="form__block">
                     <div class="form__block-title">Имя</div>
-                    <input type="text" class="form__input">
+                    <input type="text" class="form__input" name='name' required>
+                    <div class="error"></div>
                   </label>
                   <label class="form__block">
                     <div class="form__block-title">Телефон</div>
-                    <input type="text" class="form__input">
+                    <input type="text" class="form__input" name='phone' required>
+                    <div class="error"></div>
                   </label>
                 </div>
                 <div class="form__row">
@@ -523,7 +530,8 @@
               <div class="form__column">
                 <label class="form__block form__block--textarea">
                   <div class="form__block-title">Комментарий</div>
-                  <textarea class="form__input form__input--textarea"></textarea>
+                  <textarea class="form__input form__input--textarea" name="desc" id="desc" required></textarea>
+                  <div class="error"></div>
                 </label>
 
                 <div class="radio-group">
@@ -555,7 +563,7 @@
                   </div>
                 </label>
                 <div class="form-buttons">
-                  <button type="submit" class="btn">Заказать</button>
+                  <button type="submit" class="btn" id="send">Заказать</button>
                   <button type="reset" class="btn--reset">Очистить</button>
                 </div>
               </div>
@@ -565,7 +573,7 @@
         </div>
       </section>
 
-      <section class="section contacts" id="contacts">
+      <section class="section contacts" data-anchor="contacts">
         <div class="conacts-wrap">
           <!-- <div class="yandex-map" id="map">
             <img class="yandex-map__img" src="/img/eight/map.jpg" alt="">
@@ -658,33 +666,33 @@
         </svg></a>
       </div>
 
-      <ul class="fixed-menu">
-        <li class="fixed-menu__item ">
-          <a href="#" class="fixed-menu__dot"></a>
+      <ul class="fixed-menu" id="myMenu">
+        <li class="fixed-menu__item" data-menuanchor="about">
+          <a href="#about" class="fixed-menu__dot"></a>
         </li>
-        <li class="fixed-menu__item fixed-menu__item--active">
-          <a href="#" class="fixed-menu__dot"></a>
+        <li class="fixed-menu__item " data-menuanchor="best">
+          <a href="#best" class="fixed-menu__dot"></a>
         </li>
-        <li class="fixed-menu__item">
-          <a href="#" class="fixed-menu__dot"></a>
+        <li class="fixed-menu__item" data-menuanchor="burger">
+          <a href="#burger" class="fixed-menu__dot"></a>
         </li>
-        <li class="fixed-menu__item">
-          <a href="#" class="fixed-menu__dot"></a>
+        <li class="fixed-menu__item" data-menuanchor="team">
+          <a href="#team" class="fixed-menu__dot"></a>
         </li>
-        <li class="fixed-menu__item">
-          <a href="#" class="fixed-menu__dot"></a>
+        <li class="fixed-menu__item" data-menuanchor="menu">
+          <a href="#menu" class="fixed-menu__dot"></a>
         </li>
-        <li class="fixed-menu__item">
-          <a href="#" class="fixed-menu__dot"></a>
+        <li class="fixed-menu__item" data-menuanchor="reviews">
+          <a href="#reviews" class="fixed-menu__dot"></a>
         </li>
-        <li class="fixed-menu__item">
-          <a href="#" class="fixed-menu__dot"></a>
+        <li class="fixed-menu__item" data-menuanchor="work">
+          <a href="#work" class="fixed-menu__dot"></a>
         </li>
-        <li class="fixed-menu__item">
-          <a href="#" class="fixed-menu__dot"></a>
+        <li class="fixed-menu__item" data-menuanchor="order">
+          <a href="#order" class="fixed-menu__dot"></a>
         </li>
-        <li class="fixed-menu__item">
-          <a href="#" class="fixed-menu__dot"></a>
+        <li class="fixed-menu__item" data-menuanchor="contacts">
+          <a href="#contacts" class="fixed-menu__dot"></a>
         </li>
       </ul>
       <div class="popup">

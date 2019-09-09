@@ -7,11 +7,13 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 
 .slider {
   display: flex;
-  width: 100%;
+  width: rem(940px);
+  overflow: hidden;
   height: rem(475px);
   position: relative;
 
@@ -32,10 +34,13 @@
 
 .slider__list {
   display: flex;
+
+
 }
 
 .slider__elem {
   display: flex;
+  min-width: 100%;
 
   @include tablets {
     flex-direction: column;
@@ -136,6 +141,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1s;
 }
 
 .slider__arrow_left {

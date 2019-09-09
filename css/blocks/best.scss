@@ -1,12 +1,16 @@
 .best {
   background: url('/img/second-bg.jpg') center center / cover no-repeat;
+  // display: flex;
+  // justify-content: center;
+  position: relative;
 }
 
 .best__container {
   margin-top: rem(-25px);
-  display: flex;
-  align-items: center;
-
+  // display: flex;
+  justify-content: center;
+  // align-items: center;
+  height: 100%;
   @include tablets {
     margin: 0;
   }

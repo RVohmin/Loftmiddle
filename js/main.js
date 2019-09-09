@@ -45,25 +45,25 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   // слайдер
 
-// const left = document.querySelector("#left");
-// const right = document.querySelector("#right");
-// const items = document.querySelector("#items");
+const left = document.querySelector("#left");
+const right = document.querySelector("#right");
+const items = document.querySelector("#items");
 
-// right.addEventListener("click", function() {
-//   loop("right");
-// });
+right.addEventListener("click", function() {
+  loop("right");
+});
 
-// left.addEventListener("click", function() {
-//   loop("left");
-// });
+left.addEventListener("click", function() {
+  loop("left");
+});
 
-// function loop(direction) {
-//   if (direction === "right") {
-//     items.appendChild(items.firstElementChild);
-//   } else {
-//     items.insertBefore(items.lastElementChild, items.firstElementChild);
-//   }
-// }
+function loop(direction) {
+  if (direction === "right") {
+    items.appendChild(items.firstElementChild);
+  } else {
+    items.insertBefore(items.lastElementChild, items.firstElementChild);
+  }
+}
 
 
   // скрипт для секции team
@@ -124,10 +124,30 @@ $(".accorderdeon-menu__elem").click(function(e) {
         xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
         xhr.send(data);
         xhr.addEventListener('load', () => {
-          if (xhr.response.status == 1) {
+          if (xhr.response.status === 1) {
             console.log('Получилось!!!');
             console.log(xhr.response);
-          };
+            //popup-message
+            $(".status-popup").addClass("active");
+            document.querySelector('body').onwheel = e => e.stopPropagation();
+                $('.status-popup__close').on("click", function (e) {
+                  e.preventDefault();
+                  $(".status-popup").removeClass("active");
+                  document.querySelector('body').onwheel = e => e.preventDefault();
+                });
+          } else {
+            console.log('Не получилось...');
+            console.log(xhr.response);
+            document.querySelector('body').onwheel = e => e.stopPropagation();
+                $(".status-popup-err").addClass("active");
+                $('.status-popup__close').on("click", function (e) {
+                  e.preventDefault();
+                  $(".status-popup-err").removeClass("active");
+
+                });
+                document.querySelector('body').onwheel = e => e.preventDefault();
+          }
+
         })
     }
 
@@ -157,17 +177,19 @@ $(".accorderdeon-menu__elem").click(function(e) {
     menu: '#myMenu'
   });
  //скрипт для popup
-  $('.reviews .review__button-wrap .review__view').on("click", function (e) {
+  $('.reviews .review__button-wrap .review__view').one("click", function (e) {
     e.preventDefault();
-    $("body").css('overflow', 'hidden');
-    document.body.style.overflow = 'hidden';
+    document.querySelector('body').onwheel = e => e.stopPropagation();
     $(".popup").addClass("active");
-
+    $("body").css('overflow', 'hidden');
   });
   $('.popup__close').on("click", function (e) {
     e.preventDefault();
-    $("body").css('overflow', 'scroll');
     $(".popup").removeClass("active");
+    document.querySelector('body').onwheel = e => e.preventDefault();
   });
+
+
+
 
 });

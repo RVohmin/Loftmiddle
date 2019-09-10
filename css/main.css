@@ -2480,6 +2480,10 @@ textarea {
   left: 0;
   opacity: 1; }
 
+/* line 31, blocks/popup.scss */
+body.popup.active {
+  overflow: hidden; }
+
 /* line 35, blocks/popup.scss */
 .popup__wrap {
   position: relative;

@@ -28,9 +28,9 @@
   opacity: 1;
 }
 
-// body.active {
-//   overflow: hidden;
-// }
+body.popup.active {
+  overflow: hidden;
+}
 
 .popup__wrap {
   position: relative;
@@ -108,7 +108,7 @@
 .status-popup-err.active {
   left: 0;
   right: 0;
-  // overflow: 
+  // overflow:
   opacity: 1;
 }
 

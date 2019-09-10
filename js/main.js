@@ -129,25 +129,29 @@ $(".accorderdeon-menu__elem").click(function(e) {
             console.log(xhr.response);
             //popup-message
             $(".status-popup").addClass("active");
-            document.querySelector('body').onwheel = e => e.stopPropagation();
+            fullpage_api.destroy('all');
+            $("body").css('overflow', 'hidden');
+
                 $('.status-popup__close').on("click", function (e) {
                   e.preventDefault();
                   $(".status-popup").removeClass("active");
-                  document.querySelector('body').onwheel = e => e.preventDefault();
+                  $("body").css('overflow', 'visible');
+                  $('#fullpage').fullpage();
                 });
           } else {
             console.log('Не получилось...');
             console.log(xhr.response);
-            document.querySelector('body').onwheel = e => e.stopPropagation();
-                $(".status-popup-err").addClass("active");
+            $(".status-popup-err").addClass("active");
+            fullpage_api.destroy('all');
+            $("body").css('overflow', 'hidden');
+
                 $('.status-popup__close').on("click", function (e) {
                   e.preventDefault();
                   $(".status-popup-err").removeClass("active");
-
+                  $("body").css('overflow', 'visible');
+                  $('#fullpage').fullpage();
                 });
-                document.querySelector('body').onwheel = e => e.preventDefault();
           }
-
         })
     }
 
@@ -177,19 +181,18 @@ $(".accorderdeon-menu__elem").click(function(e) {
     menu: '#myMenu'
   });
  //скрипт для popup
-  $('.reviews .review__button-wrap .review__view').one("click", function (e) {
+
+  $('.reviews .review__button-wrap .review__view').on("click", function (e) {
     e.preventDefault();
-    document.querySelector('body').onwheel = e => e.stopPropagation();
-    $(".popup").addClass("active");
+    fullpage_api.destroy('all');
     $("body").css('overflow', 'hidden');
+    $(".popup").addClass("active");
   });
   $('.popup__close').on("click", function (e) {
     e.preventDefault();
     $(".popup").removeClass("active");
-    document.querySelector('body').onwheel = e => e.preventDefault();
+    $("body").css('overflow', 'visible');
+    $('#fullpage').fullpage();
+
   });
-
-
-
-
 });

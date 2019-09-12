@@ -16,6 +16,7 @@ const svgo = require('gulp-svgo');
 const svgSprite = require('gulp-svg-sprite');
 const gulpif = require('gulp-if');
 
+const env = process.env.NODE_ENV;
 const {SRC_PATH, DIST_PATH, STYLES_LIBS, JS_LIBS} = require('./gulp.config.js');
 
 sass.compiler = require('node-sass');
@@ -63,7 +64,7 @@ task('copy-fonts', () => {
 task("styles", () => {
   return src([...STYLES_LIBS, `${SRC_PATH}/css/main.scss`,
 ])
-    .pipe(sourcemaps.init())//инициализируем сорсмапы
+    .pipe(gulpif(env === 'dev', sourcemaps.init()))//инициализируем сорсмапы
     .pipe(concat("main.min.scss"))//склейка стилей
     .pipe(sassGlob())
     .pipe(sass().on('error', sass.logError))//sass
@@ -72,10 +73,10 @@ task("styles", () => {
   rem: 16,            // root element (html) font-size (default: 16)
   one: false          // whether convert 1px to rem (default: false)
 }))//пиксели в rem
-    .pipe(autoprefixer())
-    .pipe(gcmq())//медиа запросы gulp media group
-    .pipe(cleanCSS())//минификация gulp clean css
-    .pipe(sourcemaps.write())//записываем сорсмапы
+    .pipe(gulpif(env === 'dev', autoprefixer()))
+    .pipe(gulpif(env === 'prod', gcmq()))//медиа запросы gulp media group
+    .pipe(gulpif(env === 'prod', cleanCSS()))//минификация gulp clean css
+    .pipe(gulpif(env === 'dev', sourcemaps.write()))//записываем сорсмапы
     .pipe(dest(DIST_PATH))//папка назначения
     .pipe(reload({stream: true}));
 });
@@ -84,13 +85,13 @@ task('scripts', () => {
   return src([
     ...JS_LIBS, `${SRC_PATH}/js/*.js`
   ])
-    .pipe(sourcemaps.init())//инициализируем сорсмапы
+    .pipe(gulpif(env === 'dev', sourcemaps.init()))//инициализируем сорсмапы
     .pipe(concat("main.min.js", { newline: ";" }))//склейка скриптов
-    .pipe(babel({//подключаем babel
+    .pipe(gulpif(env === 'prod', babel({//подключаем babel
       presets: ['@babel/env']
-    }))
-    // .pipe(uglify())
-    // .pipe(sourcemaps.write())//записываем сорсмапы
+    })))
+    .pipe(gulpif(env === 'prod', uglify()))
+    .pipe(gulpif(env === 'dev',sourcemaps.write()))//записываем сорсмапы
     .pipe(dest(DIST_PATH))//папка назначения
     .pipe(reload({stream: true}));
 });
@@ -104,10 +105,21 @@ task('server', () => {
     });
 });
 
-watch(`${SRC_PATH}/styles/**/*.scss`, series('styles'));
-watch(`${SRC_PATH}/*.html`, series('copy:html'));
-watch('./scripts/*.js', series('scripts'));
-watch(`${DIST_PATH}/img/icons/*.svg`, series('icons'));
+task('watch', () => {
+  watch(`${SRC_PATH}/styles/**/*.scss`, series('styles'));
+  watch(`${SRC_PATH}/*.html`, series('copy:html'));
+  watch('./scripts/*.js', series('scripts'));
+  watch(`${DIST_PATH}/img/icons/*.svg`, series('icons'));
+})
 
+task("default",
+  series(
+    "clean", parallel("copy-img", "copy-fonts", "copy:html", "icons", "styles", "scripts"),
+    parallel("watch", "server")
+  )
+);
 
-task("default", series("clean", parallel("copy-img", "copy-fonts", "copy:html", "icons", "styles", "scripts"), "server"));
+task(
+  "build",
+  series("clean", parallel("copy-img", "copy-fonts", "copy:html", "icons", "styles", "scripts"))
+);

@@ -1,0 +1,48 @@
+//colors
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;
+$z-fixed-menu: 100;
+
+// resolutions
+$phones: 480px;
+$tablets: 768px;
+$laptop: 992px;
+$desktop: 1200px;
+
+//normalize
+@import "layout/*.scss";
+
+// @import "layout/normalize.scss";
+// @import "layout/media";
+
+//setups
+// @import 'layout/base';
+// @import "layout/fonts";
+@import "blocks/*.scss";
+
+// @import "blocks/section";
+// @import "blocks/header";
+// @import "blocks/hero";
+// @import "blocks/hero";
+// @import "blocks/nav";
+// @import "blocks/title";
+// @import "blocks/btn";
+// @import "blocks/hamburger-menu";
+// @import "blocks/hamburger-menu-link";
+// @import "blocks/scroll-down-btn";
+// @import "blocks/best";
+// @import "blocks/reviews";
+// @import "blocks/order";
+// @import "blocks/form";
+// @import "blocks/fixed-menu";
+// @import "blocks/team";
+// @import "blocks/dark-burger";
+// @import "blocks/menu";
+// @import "blocks/work";
+// @import "blocks/contacts";
+// @import "blocks/footer";
+// @import "blocks/popup";
+// @import "blocks/hamburger-menu";
+// @import "blocks/hamburger-menu-link";

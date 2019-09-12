@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+// media
+@mixin desktop {
+  @media screen and (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin tablets {
+  @media screen and (max-width: $tablets) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media screen and (max-width: $phones) {
+    @content;
+  }
+}
+
+html {
+  font-size: 16px;
+
+  @include laptop {
+    font-size: rem(15px);
+  }
+
+  @include phones {
+    font-size: rem(14px);
+  }
+}
+
+
+
+.wrapper {
+  overflow: hidden;
+  /* Не забыть поравить ширину под макет */
+  // min-width: 1100;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper__content {
+  flex: 1;
+}
+
+body {
+  /* !Шрифт под макет поправить! */
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #221f1f;
+  line-height: 1.42;
+  color: $black;
+  // @include ubuntu();
+}
+
+/* ВНИМАНИЕ! В контейнере не забудь поправить ширину! */
+.container {
+  max-width: 940px;
+  ;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  // position: relative;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul>li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input,
+button {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.lock {
+  overflow: hidden;
+}

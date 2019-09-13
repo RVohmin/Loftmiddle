@@ -77,7 +77,7 @@ task("styles", () => {
     .pipe(gulpif(env === 'prod', gcmq()))//медиа запросы gulp media group
     .pipe(gulpif(env === 'prod', cleanCSS()))//минификация gulp clean css
     .pipe(gulpif(env === 'dev', sourcemaps.write()))//записываем сорсмапы
-    .pipe(dest(DIST_PATH))//папка назначения
+    .pipe(dest(`${DIST_PATH}/css`))//папка назначения
     .pipe(reload({stream: true}));
 });
 

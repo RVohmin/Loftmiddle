@@ -1,21 +1,27 @@
 .work {
   background: url('../../img/seven/seven-bg.jpg') center center / cover no-repeat;
+  padding: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
 
 .work__container {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  // height: 100vh;
 }
 
-.video {
-  height: 300px;
-  width: 300px;
-  
-}
 .video__play {
-  width: 60vw;
+  height: 406px;
+  width: 660px;
+}
+
+.video__play {
+  // width: 60vw;
 }

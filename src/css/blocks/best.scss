@@ -7,13 +7,21 @@
 
 .best__container {
   margin-top: rem(-25px);
-  // display: flex;
+  display: flex;
+  max-height: 100vh;
   justify-content: center;
   // align-items: center;
   height: 100%;
 
   @include tablets {
     margin: 0;
+  }
+
+  @include phones {
+    max-height: 100vh;
+    padding: 0;
+    margin: 0;
+    width: 100%;
   }
 }
 
@@ -54,7 +62,7 @@
   @include tablets {
     display: flex;
     margin-right: 0;
-    margin-bottom: 50px;
+    margin-bottom: rem(50px);
     flex-direction: row;
     width: 100%;
     padding: 0 rem(20px);
@@ -67,10 +75,10 @@
   @include phones {
     display: flex;
     margin-right: 0;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     flex-direction: row;
     width: 100%;
-    padding: 0 rem(20px);
+    padding: 0 rem(10px);
 
     &:last-child {
       margin: 0;
@@ -82,6 +90,10 @@
 }
 
 .best__desc {
+  @include tablets {
+    text-align: left;
+  }
+
   @include phones {
     text-align: left;
   }
@@ -89,6 +101,11 @@
 
 .best__icon {
   display: flex;
+
+  @include tablets {
+    margin-right: rem(25px);
+    width: 25%;
+  }
 
   @include phones {
     margin-right: rem(25px);

@@ -39,6 +39,7 @@
     background: transparent;
     transition: .3s;
   }
+
   &:hover {
     .review__hover {
       transform: translate(-50%, -50%) scale(1);
@@ -85,8 +86,14 @@
   font-size: rem(14px);
   margin-bottom: rem(25px);
 
-  @include phones {
+  @include tablets {
     font-size: rem(20px);
+    margin-bottom: rem(5px);
+
+  }
+
+  @include phones {
+    font-size: rem(18px);
   }
 }
 
@@ -95,6 +102,11 @@
   font-size: rem(14px);
   @include ubuntu(light);
   margin-bottom: rem(13px);
+
+  @include tablets {
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
 
   @include phones {
     display: none;
@@ -116,4 +128,11 @@
   &:hover {
     background-color: rgb(31, 33, 34);
   }
+
+  @include tablets {
+    font-size: rem(10px);
+    padding: rem(5px) rem(10px);
+
+  }
+
 }

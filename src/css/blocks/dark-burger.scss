@@ -8,6 +8,16 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+
+  @include phones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
 }
 
 .slider {
@@ -27,8 +37,13 @@
   }
 
   @include phones {
-    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     width: 95%;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -50,7 +65,8 @@
 
   @include phones {
     height: 80vh;
-    width: 90%;
+    max-width: 75%;
+    margin-top: 50px;
   }
 }
 
@@ -104,14 +120,22 @@
   // padding-bottom: rem(25px);
 
   @include phones {
-    width: 100%;
-    padding: 0 10% 25px;
+    max-width: 80vw;
+    font-size: rem(14px);
+    line-height: rem(16px);
+    margin-bottom: 10px;
+    // padding: 0 10% 25px;
   }
 }
 
 
 .slider__info {
   display: flex;
+
+  @include phones {
+    max-width: 80vw;
+
+  }
 }
 
 .slider__info .btn {
@@ -125,12 +149,22 @@
   font-family: 'Gagalin-Regular';
   line-height: 1;
   letter-spacing: rem(-1.8px);
+
+  @include phones {
+    font-size: rem(40px);
+
+  }
 }
 
 .slider__price span {
   font-size: rem(72px);
   font-family: 'Gagalin-Regular';
   letter-spacing: rem(-0.75px);
+
+  @include phones {
+    font-size: rem(40px);
+
+  }
 }
 
 .slider__arrow {
@@ -177,12 +211,12 @@
   @include tablets {
     position: absolute;
     top: rem(10px);
-    left: rem(90px);
+    left: rem(50px);
   }
 
   @include phones {
     position: absolute;
-    top: rem(-70px);
+    top: rem(0px);
     left: rem(0px);
   }
 }
@@ -212,6 +246,8 @@
   height: rem(45px);
   fill: #fff;
   margin-bottom: rem(5px);
+
+
 }
 
 .components__btn-text {
@@ -265,7 +301,7 @@
 
   @include phones {
     position: absolute;
-    top: -60px;
+    top: -0px;
     right: 20px;
   }
 }

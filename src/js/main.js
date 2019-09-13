@@ -70,8 +70,12 @@
     // скрипт для секции team
     var teamList = document.getElementById("teamList");
     const li = teamList.getElementsByClassName("team__list-item");
-
+      // $(".team__list-item").click(function (e) {
+      // e.preventDefault();
+      // $(".team__list-item").not(this).removeClass('team__list--active');
+      // $(this).toggleClass('team__list--active');
     for (var i = 0; i < li.length; i++) {
+
       li[i].addEventListener("click", function (e) {
         e.preventDefault();
         let current = document.getElementsByClassName("team__list--active");

@@ -83,6 +83,7 @@
     border: rem(2px) solid transparent;
     margin-bottom: rem(13px);
 
+
     &:focus {
       border: rem(2px) solid $yellow;
     }
@@ -99,7 +100,7 @@
   margin-bottom: rem(20px);
 
   @include phones {
-    margin-bottom: rem(38px);
+    margin-bottom: rem(18px);
   }
 }
 
@@ -108,7 +109,8 @@
 
   @include phones {
     justify-content: center;
-    padding-top: rem(35px);
+    padding-top: rem(15px);
+    padding-left: rem(30px)
   }
 }
 
@@ -166,7 +168,7 @@
 
   @include phones {
     justify-content: center;
-    margin-bottom: rem(40px);
+    margin-bottom: rem(20px);
   }
 }
 

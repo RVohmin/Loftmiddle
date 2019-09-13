@@ -1,5 +1,5 @@
 .team {
-  background: url(../img/fourth/fourth-bg.jpg) center center / cover no-repeat;
+  background: url(../../img/fourth/fourth-bg.jpg) center center / cover no-repeat;
   position: relative;
 }
 
@@ -56,6 +56,17 @@
   max-height: 0;
   transition: .5s;
   overflow: hidden;
+
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .team__list-img {
+      margin-right: 0;
+      margin-bottom: rem(18px);
+    }
+  }
 }
 
 .team__list-name {
@@ -97,19 +108,12 @@
   }
 
   .team__list-desc {
-    max-height: 100px;
+    max-height: 200px;
     width: 100%;
+    display: flex;
+    margin-bottom: rem(38px);
 
-    @include tablets {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
 
-      .team__list-img {
-        margin-right: 0;
-        margin-bottom: rem(18px);
-      }
-    }
   }
 
   .team__list-name {
@@ -118,13 +122,6 @@
     &:before {
       transform: rotate(180deg);
     }
-
-  }
-
-  .team__list-desc {
-    display: flex;
-    margin-bottom: rem(38px);
-    // padding-top: 5px;
   }
 }
 

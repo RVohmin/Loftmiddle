@@ -1,12 +1,12 @@
 .order {
-  background: url(../../img/eight/bg7-texture.png) center center / cover no-repeat;
+  background: url(../img/eight/bg7-texture.png) center center / cover no-repeat;
   color: #fff;
   position: relative;
   height: 100%;
   justify-content: center;
   &:before {
     content: '';
-    background-image: url('../../img/eight/bg7-texture-over.png');
+    background-image: url('../img/eight/bg7-texture-over.png');
     filter: opacity(.9);
     position: absolute;
     top: 0;

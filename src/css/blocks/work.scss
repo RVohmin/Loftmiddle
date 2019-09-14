@@ -8,22 +8,66 @@
   width: 100vw;
   position: relative;
 
+  @include tablets {
+    padding: 0;
+  }
+
+  @include phones {
+    padding: 0;
+  }
+}
+
+.work__title {
+  @include phones {
+    padding: 0 20%;
+  }
 }
 
 .work__container {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 100%;
   margin: 0;
   height: 100vh;
 }
 
-.video__play {
-  height: 406px;
+.video-player {
+  max-height: 406px;
+  height: 100%;
   width: 660px;
+
+  @include tablets {
+    max-width: rem(660px);
+    max-height: 408px;
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  @include phones {
+    height: 260px;
+    max-width: 460px;
+    width: 100%;
+    padding: 0 10px;
+  }
 }
 
-.video__play {
-  // width: 60vw;
+#video-pleer {
+  height: 406px;
+  width: 660px;
+
+  @include tablets {
+    max-width: rem(660px);
+    max-height: 408px;
+    height: 100%;
+    width: 100%;
+  }
+
+  @include phones {
+    height: 260px;
+    max-width: 460px;
+    width: 100%;
+  }
 }

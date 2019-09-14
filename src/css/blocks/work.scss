@@ -6,6 +6,8 @@
   align-items: center;
   height: 100vh;
   width: 100vw;
+  position: relative;
+
 }
 
 .work__container {
@@ -14,7 +16,7 @@
   align-items: center;
   width: 100%;
   margin: 0;
-  // height: 100vh;
+  height: 100vh;
 }
 
 .video__play {

@@ -28,7 +28,7 @@ task("icons", () => {
       plugins: [
         {
           removeAttrs: {
-          attrs: "(fill|stroke|style|width|height|data.*)"
+          attrs: "(fill|class|stroke|style|width|height|data.*)"
         }
       }
     ]
@@ -36,7 +36,7 @@ task("icons", () => {
     .pipe(svgSprite({
       mode: {
         symbol: {
-          sprite: `${SRC_PATH}/img/sprite.svg`
+          sprite: "sprite.svg"
         }
       }
     }))

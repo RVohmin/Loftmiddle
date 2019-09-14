@@ -78,8 +78,8 @@
             <li class="best__item">
               <div class="best__icon">
                 <svg class="meat">
-                    <use xlink:href="./img/sprite.svg#meat"></use>
-                  </svg>
+                  <use xlink:href="./img/sprite.svg#meat"></use>
+                </svg>
               </div>
               <div class="best__desc">
                 <div class="best__desc-title">100% свежее мясо </div>
@@ -93,8 +93,8 @@
             <li class="best__item">
               <div class="best__icon">
                 <svg class="best__picture hand">
-                    <use xlink:href="./img/sprite.svg#hand"></use>
-                  </svg>
+                  <use xlink:href="./img/sprite.svg#hand"></use>
+                </svg>
               </div>
               <div class="best__desc">
                 <div class="best__desc-title">Ручная сборка</div>
@@ -107,8 +107,8 @@
             <li class="best__item">
               <div class="best__icon">
                 <svg class="natural">
-                    <use xlink:href="./img/sprite.svg#natural"></use>
-                  </svg>
+                  <use xlink:href="./img/sprite.svg#natural"></use>
+                </svg>
               </div>
               <div class="best__desc">
                 <div class="best__desc-title">Натуральные ингридиенты</div>
@@ -729,14 +729,47 @@
 
       <section class="section work" data-anchor="work">
         <div class="container work__container">
-          <h2 class="title title--color--black">
-            Как мы работаем
-          </h2>
-          <div class="video">
+          <h2 class="title title--color--black">Как мы работаем</h2>
 
-            <video class="video__play" src="img/video.mp4" controls></video>
+          <div class="video-player">
+
+            <div class="player">
+              <div class="player__wrapper">
+                <video volume poster="./img/splash.jpg" width="660" height="405" id="video-pleer">
+                  <source src="./img/video.mp4" type="video/mp4">
+                </video>
+                <!-- <div id="yt-player"></div> -->
+                <!-- <div class="player__splash"></div> -->
+              </div>
+              <div class="player__controls">
+                <button class="player__start"></button>
+                <div class="player__playback">
+                  <button class="player__playback-button"></button>
+                </div>
+                <div class="player__duration">
+                  <span class="player__duration-completed">0:00</span> :
+                  <span class="player__duration-estimate">0:00</span>
+                </div>
+                <div class="volume">
+                  <svg class="volume__icon">
+                    <use xlink:href="img/icons/symbol/sprite.svg#volume"></use>
+                  </svg>
+                  <input type="range" step="0.1" min="0" max="1" value="1" id="volume" />
+                </div>
+              </div>
+            </div>
+            <!-- <div class="controls">
+    <a href="#" class="controls__play">
+      <svg class="play-icon">
+        <use xlink:href="./img/icons/symbol/sprite.svg#play"></use>
+      </svg>
+    </a>
+  </div> -->
 
           </div>
+
+
+
         </div>
       </section>
 
@@ -919,8 +952,8 @@
         </div>
         <a class="hamburger-menu__close" href="#">
           <svg class="hamburger-menu__close-icon">
-          <use xlink:href="./img/sprite.svg#close"></use>
-        </svg></a>
+        <use xlink:href="./img/sprite.svg#close"></use>
+      </svg></a>
       </div>
 
       <ul class="fixed-menu" id="myMenu">
@@ -958,7 +991,8 @@
           <a href="#" class="popup__close"></a>
           <div class="popup__title">Константин Спилберг</div>
           <div class="popup__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно
-            забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+            забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+          </div>
         </div>
       </div>
 

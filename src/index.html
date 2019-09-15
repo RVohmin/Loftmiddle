@@ -751,9 +751,14 @@
                   <span class="player__duration-estimate">0:00</span>
                 </div>
                 <div class="volume">
-                  <svg class="volume__icon">
-                    <use xlink:href="img/icons/symbol/sprite.svg#volume"></use>
-                  </svg>
+                  <div class="volume__pic" id="volume__pic">
+                    <svg class="volume__icon" id="volume__icon">
+                      <use xlink:href="img/icons/symbol/sprite.svg#volume"></use>
+                    </svg>
+                    <svg class="silent">
+                      <use xlink:href="img/icons/symbol/sprite.svg#mute"></use>
+                    </svg>
+                  </div>
                   <input type="range" step="0.1" min="0" max="1" value=".3" id="volume" />
                 </div>
               </div>

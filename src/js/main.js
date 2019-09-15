@@ -261,14 +261,28 @@
 
             const volumeControl = document.getElementById('volume');
             const volumePic = $('.volume__icon');
+            const volumeMute = $('.silent');
             volumeControl.addEventListener('input', function() {
                 video.volume = volumeControl.value;
                 if (video.volume == 0) {
-                    volumePic.addClass('silent');
+                    volumePic.css({
+                        display: 'none'
+                    })
+                    volumeMute.css({
+                        display: 'block'
+                    });
                 } else {
-                    volumePic.removeClass('silent');
+                    volumePic.css({
+                        display: 'block'
+                    })
+                    volumeMute.css({
+                        display: 'none'
+                    });
                 }
             }, true);
+
+
+
         })
 
 
